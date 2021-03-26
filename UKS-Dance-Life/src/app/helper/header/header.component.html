@@ -8,11 +8,13 @@
         <fa-icon data-aos="fade-up" *ngIf="!isOpen" (click)="showMenu()" [icon]="faBars"></fa-icon>
         <fa-icon data-aos="fade-up" *ngIf="isOpen" (click)="showMenu()" [icon]="faTimes"></fa-icon>
     </div> -->
-    <div class="tab tab-menu">
+    <fa-icon class="hamburger"  (click)="showMenu()" [icon]="faBars"></fa-icon>
+    <div class="tab">
         <a>Strona główna</a>
         <a>O nas</a>
         <a>Oferta</a>
         <a>Cennik</a>
         <a>Harmonogram</a>
+        
     </div>
 </div>

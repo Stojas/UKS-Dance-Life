@@ -9,14 +9,26 @@
     // min-height: 100px;
     width: 100vw;
     display: flex;
+    .hamburger{
+      display: none;
+      color: white;
+      width: 30px;
+      height: 30px;
+      font-size: 30px;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+    }
     .tab{
       height: 100%;
       width: 1000px;
       margin: 0 auto;
       display: flex;
       justify-content: center;
+      flex-direction: row;
       align-items: center;
       text-align: left;
+      padding-top: 0;
       a{
         color: white;
         padding: 0 20px;
@@ -36,6 +48,7 @@
       a{
           color: white;
           // padding: 0 30px;
+          margin: 0;
           font-size: 14px;
           font-weight: 500;
           text-transform: uppercase;
@@ -91,4 +104,27 @@
 
 .show{
   min-height: 300px;
+}
+
+@media screen and (max-width: 900px){
+  .header{
+    .tab{
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-top: 100px;
+      a{
+        margin: 20px;
+      }
+    }
+    .hamburger{
+      display: block;
+    }
+    background-color: #000;
+  }
+  .show{
+    min-height: 425px;
+  }
+  .scrolled-header, .maximize-header{
+    animation: none;
+  }
 }
