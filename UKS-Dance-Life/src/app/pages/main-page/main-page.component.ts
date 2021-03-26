@@ -18,6 +18,6 @@ export class MainPageComponent implements OnInit {
 
   scroll(temp){
     temp.scrollIntoView({behavior:"smooth"});
-  }
+  }  
 
 }
