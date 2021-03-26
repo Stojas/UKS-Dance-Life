@@ -1,20 +1,77 @@
-<!-- <div class="main main-first">
-    <div  data-aos="fade-up"
->DUPADASAASDASJINJUINFSOIFASNOASFNOASDOAS</div>
-</div>
-<div class="main ">
-    <div  class="desc">DUPADASAASDASJINJUINFSOIFASNOASFNOASDOAS</div>
-</div>
-<div class="main main-second">
-    <div  class="desc">DUPADASAASDASJINJUINFSOIFASNOASFNOASDOAS</div>
-</div> -->
+<div class="parallax main-first">
+    <!-- <img class="logo" src="assets/img/uks_logo_header.png" data-aos="fade-left" data-aos-delay="500"> -->
+    <fa-icon class="arrow" data-aos="fade-up" [icon]="faChevronDown"></fa-icon>
+    <div class="text" data-aos="fade-left" data-aos-delay="1000">UKS DANCE LIFE</div>
+    <div class="separator" data-aos="fade-down" data-aos-delay="2000"></div>
+    <div class="text quot" data-aos="fade-left" data-aos-delay="3000">&quot;...z miłości do tańca&quot;</div>
+    <div class="arrow-down blink" (click)="scroll(info)" data-aos="fade-up" data-aos-delay="3000">
+        <fa-icon class="arrow"  [icon]="faChevronDown"></fa-icon>
+    </div>
 
-<div class="main main-first parallax">
-    <div  data-aos="fade-up"
->DUPADASAASDASJINJUINFSOIFASNOASFNOASDOAS</div>
 </div>
-<div class="main">
-    <div data-aos="fade-up" class="title"><h1>O nas</h1></div>
+<section class="main" #info>
+    <div class="background"><span style="padding-left: 10%" data-aos="fade-left" data-aos-delay="500">U</span><br><span
+            data-aos="fade-left" data-aos-delay="500" style="padding-left: 20%">K</span><br><span data-aos="fade-left"
+            data-aos-delay="500" style="padding-left: 30%">S</span></div>
+    <div class="intro" data-aos="fade-up">
+        <div class="text-side">
+            <h2>&quot;Podczas każdego tańca, któremu oddajemy się z radością, umysł traci swoją zdolność kontroli, a ciałem zaczyna kierować serce.&quot;</h2>
+            <p>Zapraszam Was do świata, pełnego pozytywnej energii. Jestem dyplomowanym instruktorem tańca i założycielem Studia Tańca "UKS Dance Life", które pomaga ludziom i organizacjom w osiąganiu ich tanecznych celów z wykorzystaniem sprawdzonych metod nauczania. Poznaj nasz zespół i ofertę, a sprawimy, że Wasze palce będą całe!
+
+                "Nie po palcach" to nowoczesna szkoła tańca w Toruniu, w której tańczyć może każdy. Działamy na toruńskiej Starówce przy ul. Jęczmiennej 13. Posiadamy dwie profesjonalne, klimatyzowane sale taneczne i klimatyczną recepcję, w której poznacie szczegóły naszej działalności, aktualną ofertę, a także otrzymacie wsparcie w doborze odpowiedniego stylu tańca.
+                
+                Prowadzimy warsztaty i kursy tańca towarzyskiego, kizomby, salsy kubańskiej, bachaty, a także lindy hop w kilkunastu grupach na różnych poziomach zaawansowania dla dorosłych oraz dla dzieci. Organizujemy także imprezy tematyczne i practisy, na których możecie doskonalić swój warsztat taneczny i poznać innych tancerzy. To doskonałe miejsce, aby zakochać się w tańcu.
+                
+                Zapraszam do wspólnej zabawy!</p>
+        </div>
+        <div class="photo">
+            <fa-icon class="arrow"  [icon]="faShoePrints"></fa-icon>
+        </div>
+    </div>
+    <div class="arrow-down blink" (click)="scroll(offer)" data-aos="fade-up" data-aos-delay="3000">
+        <fa-icon class="arrow"  [icon]="faChevronDown"></fa-icon>
+    </div>
+</section>
+<section #offer class="main" style="background-color: #fcfcfc" >
+    <div data-aos="fade-up" class="title">
+        <h1>Oferta</h1>
+    </div>
+    <div data-aos="fade-up" class="offers">
+        <div class="offer">
+            <div class="img wedding"></div>
+            <div class="title"><h2>Pierwszy taniec</h2></div>
+            <div class="offer-link" data-aos="fade-up"><p>Zobacz ofertę</p></div>
+        </div>
+        <div class="offer">
+            <div class="img ladies_latino"></div>
+            <div class="title"><h2>Ladies Latino</h2></div>
+            <div class="offer-link" data-aos="fade-up"><p>Zobacz ofertę</p></div>
+        </div>
+        <div class="offer">
+            <div class="img couple"></div>
+            <div class="title"><h2>W parach</h2></div>
+            <div class="offer-link" data-aos="fade-up"><p>Zobacz ofertę</p></div>
+        </div>
+        <div class="offer">
+            <div class="img kids"></div>
+            <div class="title"><h2>Dla dzieci</h2></div>
+            <div class="offer-link" data-aos="fade-up"><p>Zobacz ofertę</p></div>
+        </div>
+        <div class="offer"> <div class="img middle"></div>
+        <div class="title"><h2>Dla młodzieży</h2></div>
+        <div class="offer-link" data-aos="fade-up"><p>Zobacz ofertę</p></div></div>
+       
+        <div class="offer">
+            <div class="img old"></div>
+            <div class="title"><h2>Dla seniorów</h2></div>
+            <div class="offer-link" data-aos="fade-up"><p>Zobacz ofertę</p></div>
+        </div>
+    </div>
+</section>
+<!-- <section class="main">
+    <div data-aos="fade-up" class="title">
+        <h1>O nas</h1>
+    </div>
     <div class="dancer">
         <img data-aos="fade-up" src="assets/img/misia.jpg">
         <div data-aos="fade-up" class="desc">
@@ -32,6 +89,6 @@
             <p>Nauczyciel tańca</p>
         </div>
         <img data-aos="fade-up" src="assets/img/filip.jpg">
-     
+
     </div>
-</div>
+</section> -->

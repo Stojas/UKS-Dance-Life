@@ -1,19 +1,100 @@
 .main{
-    width: 100%;
-    height: 100vh;
+    // width: 100%;
+    width:100%;
+    min-height: 100vh;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
+    background-color: #fff;
+    position: relative;
+    padding: 50px;
+    overflow: hidden;
     // display: flex;
     // justify-content: center;
     // align-items: center;
     &-first{
-        background-image: url('../../../assets/img/3075101.jpg');
-
+        background-image: url('../../../assets/img/dancing.jpg');
+        overflow: hidden;
+        // filter: blur(3px);
+        height: 100vh;
+        width: 100vw;
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        background-color: #000;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo-text{
+            p{
+                color: white;
+                font-size: 20px;
+                margin: 1px;
+                padding: 0;
+            }
+            p:first-child{
+                text-align: left;
+            }
+            p:nth-child(2){
+                font-size: 30px;
+            }
+            p:last-child{
+                text-align: right;
+            }
+        }
+        .logo{
+            position: absolute;
+            top: 20px;
+            left: 0;
+            z-index: 1002;
+            width: 100px;
+        }
+        .text{
+            color: white;
+            font-size: 40px;
+            // position: absolute;
+            // bottom: 200px;
+            // left: 200px;
+            // z-index: 1000;
+            // font-family: 'Dancing Script', cursive;
+            // background: -webkit-linear-gradient(0.25deg, #eee, #d4c863);
+            // -webkit-background-clip: text;
+            // -webkit-text-fill-color: transparent;
+            color: #fff;
+            font-family: 'Bebas Neue', cursive;
+        }
+        .separator{
+            margin: 30px;
+            height: 100px;
+            width: 1px;
+            background-color: #fff;
+        }
+        .quot{
+            font-family: 'Dancing Script', cursive;
+        }
+        .arrow-down{
+            color: lightgray;
+            font-size: 50px;
+            position: absolute;
+            z-index: 1000;
+            bottom: 100px;
+            left: calc(50% - 20px);
+            width: 40px;
+            cursor: pointer;
+        }
     }
-    &-second{
-        background-image: url('../../../assets/img/main2.jpg');
 
+    .arrow{
+        font-size: 40px;
+        position: absolute;
+        width: 90px;
+        right: calc(50% - 45px);
+        font-size: 50px;
+        color: white;
+        bottom: 100px;;
+        font-size: 100px;
+        color: rgba(255, 255, 255, 0.4);
     }
     .dancer{
         width: 100%;
@@ -27,6 +108,7 @@
         }
         .desc{
             padding: 0 30px;
+            color: #000;
             .title{
                 font-family: 'Dancing Script', cursive;
                 font-size: 32px;
@@ -40,6 +122,144 @@
             text-align: center;
         }
      
+    }
+
+    .background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: rgba(0, 0, 0, 0.03);
+        font-size: 200px;
+        letter-spacing: 500px;
+        span{
+            font-family: 'Dancing Script', cursive;
+
+        }
+        z-index: 0;
+        text-align: center;
+    }
+
+    .intro{
+        width: 100%;
+        height: 50vh;
+        color: black;
+        padding: 50px 50px 50px 182px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .text-side{
+            flex-basis: 70%;
+            height: 100%;
+            padding: 50px 30px;
+            h2{
+                font-size: 40px;
+                font-family: 'Dancing Script', cursive;
+                font-weight: 500;
+            }
+            p{
+                letter-spacing: 1px;
+                color: grey
+            }
+        }
+        .photo{
+            flex-basis: 30%;
+            height: 400px;
+            background-image: url('../../../assets/img/dance_hall.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            fa-icon{
+                position: absolute;
+                top: -15px;
+                left: -15px;
+                color: #059ced;
+            }
+        }
+    }
+    .offers{
+        height: 100vh;
+        width: 100%;
+        padding: 50px 50px 50px 182px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: #fcfcfc;
+
+        .offer{
+            .img{
+                width: 100%;
+                height: 300px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: all .2s ease-in-out;
+            }
+            .title{
+                height: 40px;
+                h2{
+                    font-family: 'Dancing Script', cursive;
+                    font-size: 25px;
+                    color: #d4c863;
+                    text-align: center;
+                }
+               
+            }
+            .offer-link{
+                display: none;
+                p{
+                    font-family: 'Dancing Script', cursive;
+                    font-size: 20px;
+                    color: #000;
+                    text-align: center;
+                    height: 30px;
+                    margin: 0;
+                }
+                
+            }
+            flex-basis: 25%;
+            flex-shrink: 1;
+            flex-grow: 0;
+            overflow: hidden;
+            background-color: white;
+            // max-height: 350px;
+            // border: 1px solid #d4c863;
+            height: 390px;
+            margin: 20px;
+            &:hover{
+                cursor: pointer;
+              .img{
+                  transform: scale(1.02);
+              }
+              .offer-link{
+                  display: block;
+              }
+            }
+        }
+
+        .wedding{
+            background-image: url('../../../assets/img/wedding.png');
+        }
+
+        .ladies_latino{
+            background-image: url('../../../assets/img/ladies_latino.jpg');
+        }
+        
+        .couple{
+            background-image: url('../../../assets/img/couple.jpg');
+        }
+        .kids{
+            background-image: url('../../../assets/img/kids.jpg');
+        }
+        .middle{
+            background-image: url('../../../assets/img/middle.jpg');
+        }
+        .old{
+            background-image: url('../../../assets/img/old.jpg');
+        }
     }
 }
 
@@ -55,4 +275,20 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .blink {
+    animation: blink-animation 3s  infinite;
+    -webkit-animation: blink-animation 3s  infinite;
+    animation-delay: 4s;
+  }
+  @keyframes blink-animation {
+    to {
+      opacity: 0.5;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+        opacity: 0.5;
+    }
   }

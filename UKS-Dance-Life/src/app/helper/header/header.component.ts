@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  faBars = faBars;
+  faTimes = faTimes;
+  isOpen: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  showMenu(){
+    this.isOpen = !this.isOpen;
+  }
 }
