@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { faChevronDown, faShoePrints } from '@fortawesome/free-solid-svg-icons';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { faCalendarAlt, faChevronDown, faEnvelope, faShoePrints, faUserFriends } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-main-page',
@@ -10,8 +10,12 @@ export class MainPageComponent implements OnInit {
 
   faChevronDown = faChevronDown;
   faShoePrints = faShoePrints;
+  faCalendarAlt = faCalendarAlt;
+  faEvelope = faEnvelope;
+  faUserFriends = faUserFriends;
   
   constructor() { }
+
 
   ngOnInit(): void {
   }

@@ -1,38 +1,19 @@
 <div class="parallax main-first">
+    <div class="filter">
     <!-- <img class="logo" src="assets/img/uks_logo_header.png" data-aos="fade-left" data-aos-delay="500"> -->
-    <fa-icon class="arrow" data-aos="fade-up" [icon]="faChevronDown"></fa-icon>
-    <div class="text" data-aos="fade-left" data-aos-delay="1000">UKS DANCE LIFE</div>
-    <div class="separator" data-aos="fade-down" data-aos-delay="2000"></div>
-    <div class="text quot" data-aos="fade-left" data-aos-delay="3000">&quot;...z miłości do tańca&quot;</div>
+    <div class="text" data-aos="fade-left" data-aos-delay="500">UKS DANCE LIFE</div>
+    <div class="separator" data-aos="fade-down" data-aos-delay="100"></div>
+    <div class="text quot" data-aos="fade-right" data-aos-delay="1000">&quot;...z miłości do tańca&quot;</div>
     <div class="arrow-down blink" (click)="scroll(info)" data-aos="fade-up" data-aos-delay="3000">
         <fa-icon class="arrow"  [icon]="faChevronDown"></fa-icon>
     </div>
-
 </div>
-<section class="main" #info>
-    <div class="background"><span style="padding-left: 10%" data-aos="fade-left" data-aos-delay="500">U</span><br><span
-            data-aos="fade-left" data-aos-delay="500" style="padding-left: 20%">K</span><br><span data-aos="fade-left"
-            data-aos-delay="500" style="padding-left: 30%">S</span></div>
-    <div class="intro" data-aos="fade-up">
-        <div class="text-side">
-            <h2>&quot;Podczas każdego tańca, któremu oddajemy się z radością, umysł traci swoją zdolność kontroli, a ciałem zaczyna kierować serce.&quot;</h2>
-            <p>Zapraszam Was do świata, pełnego pozytywnej energii. Jestem dyplomowanym instruktorem tańca i założycielem Studia Tańca "UKS Dance Life", które pomaga ludziom i organizacjom w osiąganiu ich tanecznych celów z wykorzystaniem sprawdzonych metod nauczania. Poznaj nasz zespół i ofertę, a sprawimy, że Wasze palce będą całe!
-
-                "Nie po palcach" to nowoczesna szkoła tańca w Toruniu, w której tańczyć może każdy. Działamy na toruńskiej Starówce przy ul. Jęczmiennej 13. Posiadamy dwie profesjonalne, klimatyzowane sale taneczne i klimatyczną recepcję, w której poznacie szczegóły naszej działalności, aktualną ofertę, a także otrzymacie wsparcie w doborze odpowiedniego stylu tańca.
-                
-                Prowadzimy warsztaty i kursy tańca towarzyskiego, kizomby, salsy kubańskiej, bachaty, a także lindy hop w kilkunastu grupach na różnych poziomach zaawansowania dla dorosłych oraz dla dzieci. Organizujemy także imprezy tematyczne i practisy, na których możecie doskonalić swój warsztat taneczny i poznać innych tancerzy. To doskonałe miejsce, aby zakochać się w tańcu.
-                
-                Zapraszam do wspólnej zabawy!</p>
-        </div>
-        <div class="photo">
-            <fa-icon class="arrow"  [icon]="faShoePrints"></fa-icon>
-        </div>
-    </div>
-    <div class="arrow-down blink" (click)="scroll(offer)" data-aos="fade-up" data-aos-delay="3000">
-        <fa-icon class="arrow"  [icon]="faChevronDown"></fa-icon>
-    </div>
+</div>
+<section class="main intro"  #info>
+    <h1 data-aos="fade-up" class="title-black">Opis pierwszy</h1>
+    <p data-aos="fade-up" class="desc">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 </section>
-<section #offer class="main" style="background-color: #fcfcfc" >
+<!-- <section class="main" style="background-color: #fcfcfc" >
     <div data-aos="fade-up" class="title">
         <h1>Oferta</h1>
     </div>
@@ -67,7 +48,7 @@
             <div class="offer-link" data-aos="fade-up"><p>Zobacz ofertę</p></div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- <section class="main">
     <div data-aos="fade-up" class="title">
         <h1>O nas</h1>
@@ -92,3 +73,31 @@
 
     </div>
 </section> -->
+
+<section class="info parallax">
+    <div class="filter">
+        <h1 data-aos="fade-up" class="title-white">Nasza oferta</h1>
+        <div data-aos="fade-up" class="row">
+            <div class="element">
+                <fa-icon   [icon]="faShoePrints"></fa-icon>
+                <p class="desc">Nasza oferta</p>
+                <button>Sprawdź</button>
+            </div>
+            <div class="element">
+                <fa-icon   [icon]="faCalendarAlt"></fa-icon>
+                <p class="desc">Nasz harmonogram</p>
+                <button>Sprawdź</button>
+            </div>
+            <div class="element">
+                <fa-icon   [icon]="faEvelope"> </fa-icon>
+                <p class="desc">Kontakt</p>
+                <button>Sprawdź</button>
+            </div> 
+            <div class="element">
+                <fa-icon   [icon]="faUserFriends"> </fa-icon>
+                <p class="desc">O nas</p>
+                <button>Sprawdź</button>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,13 +1,13 @@
-<div class="header" [ngClass]="{'show': isOpen}">
-    
+<div class="header" [ngClass]="{'show': isOpen, 'scrolled-header':  (isScrolled | async ), 'maximize-header':  ((isScrolled | async ) == false)}">
+    <img class="logo" src="assets/img/uks_logo_header.png">
     <!-- <div class="header-container">
         <img src="assets/img/uks_logo_header.png">
         
     </div> -->
-    <div class="tab">
+    <!-- <div class="tab">
         <fa-icon data-aos="fade-up" *ngIf="!isOpen" (click)="showMenu()" [icon]="faBars"></fa-icon>
         <fa-icon data-aos="fade-up" *ngIf="isOpen" (click)="showMenu()" [icon]="faTimes"></fa-icon>
-    </div>
+    </div> -->
     <div class="tab tab-menu">
         <a>Strona główna</a>
         <a>O nas</a>
