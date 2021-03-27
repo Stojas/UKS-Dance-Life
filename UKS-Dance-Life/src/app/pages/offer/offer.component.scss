@@ -1,0 +1,166 @@
+.ladies_latino{
+    background-image: url('../../../assets/img/ladies_latino.jpg');
+}
+.bachata{
+    background-image: url('../../../assets/img/BACHATA.jpg');
+}
+
+.couple_basic{
+    background-image: url('../../../assets/img/TANIEC_TOWARZYSKI_DLA_PAR_GR_POCZ.jpg');
+
+} 
+
+.zumba{
+    background-image: url('../../../assets/img/ZUMBA.jpg');
+} 
+
+.kids_mix{
+    background-image: url('../../../assets/img/TANECZNY_MIX_MALUCHA.jpg');
+} 
+
+.kids_basic{
+    background-image: url('../../../assets/img/kids_basic.jpg');
+} 
+
+.kids_couple{
+    background-image: url('../../../assets/img/TANIEC_TOWARZYSKI_DLA_DZIECI.jpg');
+}
+
+.kids_couple_sport{
+    background-image: url('../../../assets/img/TANIEC_TOWARZYSKI_DLA_DZIECI.jpg');
+}
+
+
+.couple{
+    background-image: url('../../../assets/img/couple.jpg');
+}
+
+.middle{
+    background-image: url('../../../assets/img/middle.jpg');
+}
+
+.old{
+    background-image: url('../../../assets/img/old.jpg');
+}
+
+.ballet{
+    background-image: url('../../../assets/img/main2.jpg');
+}
+
+.filter{
+    background: linear-gradient(25deg, rgba(75, 186, 219, 0.7), rgb(194, 115, 255, 0.7) , rgb(27, 62, 128, 0.7) );
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.offers{
+    width: 100%;
+    // padding: 50px;
+    // background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .element{
+        flex-basis: 33.333%;
+        height: 800px;
+       
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        // transition: background-position 0.5s ease-in-out;
+        p{
+            color: white;
+        }
+        .filter{
+            // display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .split{
+                width:100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .col{
+                    display: flex;
+                    flex-basis: 45%;
+                    justify-content: flex-end;
+                    align-items: center;
+                    flex-direction: column;
+                    p{
+                        height: 45px;
+                    }
+                }
+                .separator{
+                    height: 100px;
+                    width: 1px;
+                    background-color: white;
+                }
+            }
+        }
+        &:hover{
+            // background-position: top center;
+            .filter{
+                opacity: 1;
+            }
+        }
+        @media screen and (max-width: 1000px){
+            flex-basis: 50%;
+        }
+        @media screen and (max-width: 650px){
+            flex-basis: 100%;
+        }
+    }
+    .row{
+        width: 100%;
+        padding: 50px 50px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .separator{
+            flex-basis: 10%;
+            max-width: 1px;
+            height: 500px;
+            background: linear-gradient(25deg, rgba(75, 186, 219, 0.7), rgb(194, 115, 255, 0.7) , rgb(27, 62, 128, 0.7) );
+        }
+        .offer{
+            flex-basis: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+            img{
+                width: 500px;
+                height: 500px;
+            }
+        }
+      
+    }
+    // .offer{
+    //     height: 400px;
+    //     width: 300px;
+    // }
+}
+.parallax {
+    /* The image used */
+    // background-image: url("img_parallax.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

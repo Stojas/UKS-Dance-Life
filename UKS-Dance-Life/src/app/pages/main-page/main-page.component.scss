@@ -54,14 +54,6 @@
         .text{
             color: white;
             font-size: 40px;
-            // position: absolute;
-            // bottom: 200px;
-            // left: 200px;
-            // z-index: 1000;
-            // font-family: 'Dancing Script', cursive;
-            // background: -webkit-linear-gradient(0.25deg, #eee, #d4c863);
-            // -webkit-background-clip: text;
-            // -webkit-text-fill-color: transparent;
             color: #fff;
             font-family: 'Bebas Neue', cursive;
         }
@@ -124,23 +116,6 @@
                 font-size: 32px;
             }
         }
-    }
-    // .title{
-    //     h1{
-    //         font-family: 'Dancing Script', cursive;
-    //         font-size: 40px;
-    //         text-align: center;
-    //     }
-     
-    // }
-
- 
-
-    p.desc{
-        color: gray;
-        font-size: 14px;
-        letter-spacing: 1px;
-        font-weight: 400;
     }
 
     .background{
@@ -255,7 +230,7 @@
 }
 .info{
     min-height: 500px;
-    background-image: url('../../../assets/img/dancing_kids.jpg');
+    background-image: url('../../../assets/img/DZIECI1.jpg');
     .filter{
         background: linear-gradient(25deg, rgba(75, 186, 219, 0.7), rgb(194, 115, 255, 0.7) , rgb(27, 62, 128, 0.7) );
         width: 100%;

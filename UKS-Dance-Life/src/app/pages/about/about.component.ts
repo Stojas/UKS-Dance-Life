@@ -3,11 +3,11 @@ import { faCalendarAlt, faChevronDown, faEnvelope, faShoePrints, faUserFriends }
 import { StateService } from 'src/app/state.service';
 
 @Component({
-  selector: 'app-main-page',
-  templateUrl: './main-page.component.html',
-  styleUrls: ['./main-page.component.scss']
+  selector: 'app-about',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.scss']
 })
-export class MainPageComponent implements OnInit {
+export class AboutComponent implements OnInit {
 
   faChevronDown = faChevronDown;
   faShoePrints = faShoePrints;
@@ -19,10 +19,6 @@ export class MainPageComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.stateService.isMain.next(true);
-  }
-
-  ngOnDestroy(){
     this.stateService.isMain.next(false);
   }
 

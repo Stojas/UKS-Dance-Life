@@ -1,4 +1,4 @@
-<div class="header" [ngClass]="{'show': isOpen, 'scrolled-header':  (isScrolled | async ), 'maximize-header':  ((isScrolled | async ) == false)}">
+<div class="header" [ngClass]="{'show': isOpen, 'scrolled-header':  (isScrolled | async ), 'maximize-header':  ((isScrolled | async ) == false), 'always-black': !(stateService.isMain | async)}">
     <img class="logo" src="assets/img/uks_logo_header.png">
     <!-- <div class="header-container">
         <img src="assets/img/uks_logo_header.png">
@@ -10,10 +10,10 @@
     </div> -->
     <fa-icon class="hamburger"  (click)="showMenu()" [icon]="faBars"></fa-icon>
     <div class="tab">
-        <a>Strona główna</a>
-        <a>O nas</a>
-        <a>Oferta</a>
-        <a>Cennik</a>
+        <a  routerLink="/">Strona główna</a>
+        <a  routerLink="/about">O nas</a>
+        <a routerLink="/oferta">Oferta</a>
+        
         <a>Harmonogram</a>
         
     </div>
