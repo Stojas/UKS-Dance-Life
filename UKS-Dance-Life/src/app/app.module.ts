@@ -9,6 +9,7 @@ import { HeaderComponent } from './helper/header/header.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { OfferComponent } from './pages/offer/offer.component';
+import { GraphicComponent } from './pages/graphic/graphic.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { OfferComponent } from './pages/offer/offer.component';
     MainPageComponent,
     FooterComponent,
     AboutComponent,
-    OfferComponent
+    OfferComponent,
+    GraphicComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
