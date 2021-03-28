@@ -30,34 +30,12 @@
             color: white;
         }
         .filter{
-            // display: none;
             opacity: 0;
             transition: opacity 0.5s ease-in-out;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            .split{
-                width:100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                .col{
-                    display: flex;
-                    flex-basis: 45%;
-                    justify-content: flex-end;
-                    align-items: center;
-                    flex-direction: column;
-                    p{
-                        height: 45px;
-                    }
-                }
-                .separator{
-                    height: 100px;
-                    width: 1px;
-                    background-color: white;
-                }
-            }
         }
         &:hover{
             // background-position: top center;
@@ -142,7 +120,7 @@
 }
 
 .couple_basic{
-    background-image: url('../../../assets/img/TANIEC_TOWARZYSKI_DLA_PAR_GR_POCZ.jpg');
+    background-image: url('../../../assets/img/TANIEC_TOWARZYSKI_DOROSLI.jpg');
     flex-basis: 25% !important;
 } 
 
@@ -171,15 +149,34 @@
     background-image: url('../../../assets/img/TANIEC_TOWARZYSKI_DLA_DZIECI.jpg');
 }
 
+.kids_new{
+    background-image: url('../../../assets/img/TANIEC_NOWOCZESNY_DLA_DZIECI.jpg');
+}
+
 .polonaise{
-    background-image: url('../../../assets/img/polonaise.jpg');
-    flex-basis: 50% !important;
+    background-image: url('../../../assets/img/PRZEDSTUDNIOWKOWY_KURS_TANCA.jpg');
+    flex-basis: 33.333% !important;
 }
 
 .couple{
     background-image: url('../../../assets/img/couple.jpg');
     flex-basis: 50% !important;
 
+}
+
+.young_new{
+    background-image: url('../../../assets/img/JAZZ_NOWOCZESNY_MŁODZIEZ.jpg');
+    flex-basis: 33.333% !important;
+}
+
+.young_couple{
+    background-image: url('../../../assets/img/TANIEC_TOWARZYSKI_DLA_MLODZIEZY.jpg');
+    flex-basis: 33.333% !important;
+}
+
+.mature{
+    background-image: url('../../../assets/img/PRZEDSTUDNIOWKOWY_KURS_TANCA.jpg');
+    flex-basis: 33.333% !important;
 }
 
 .couple_latino{
@@ -189,7 +186,7 @@
 
 
 .solo_latino{
-    background-image: url('../../../assets/img/ladies_latino.jpg');
+    background-image: url('../../../assets/img/LATINO_SOLO.jpg');
     flex-basis: 25% !important;
 }
 
@@ -198,24 +195,54 @@
     flex-basis: 50% !important;
 }
 
-.others{
-    height: 60vh;
-    background-image: url('../../../assets/img/DZIECI2.jpg');
-    background-position: top;
+.pro_am{
+    background-image: url('../../../assets/img/PRO-AM.jpg');
+    flex-basis: 33.333% !important;
 }
+
+.wedding{
+    background-image: url('../../../assets/img/PIERWSZY_TANIEC.jpg');
+    flex-basis: 33.333% !important;
+}
+
+.individual{
+    background-image: url('../../../assets/img/LEKCJE_INDYWIDUALNE.jpg');
+    flex-basis: 33.333% !important;
+}
+
+
+// @media screen and (max-width: 1490px){
+//     .couple_latino, .solo_latino, .couple_basic, .couple_use{
+//         flex-basis: 50% !important;
+//     }
+
+// }
+
+
 
 @media screen and (max-width: 1490px){
-    .couple_latino, .solo_latino, .couple_basic, .couple_use{
+    .kids_mix, .kids_basic, .kids_couple, .kids_couple_sport,
+     .solo_latino, .couple_basic, .couple_use, .step, .zumba,
+      .couple_latino, .solo_latino, .couple_basic, .couple_use,
+       .polonaise, .couple, .young_new, .young_couple, .mature, .pro_am, .wedding, .individual, .kids_new{
         flex-basis: 50% !important;
     }
-    
-}
 
-@media screen and (max-width: 1001px){
-    .kids_mix, .kids_basic, .kids_couple, .kids_couple_sport, .solo_latino, .couple_basic, .couple_use, .step, .zumba, .couple_latino, .solo_latino, .couple_basic, .couple_use, .polonaise, .couple{
+    .kids_new, .young_new, .wedding{
         flex-basis: 100% !important;
     }
 }
+
+@media screen and (max-width: 1001px){
+    .kids_mix, .kids_basic, .kids_couple, .kids_couple_sport,
+     .solo_latino, .couple_basic, .couple_use, .step, .zumba,
+      .couple_latino, .solo_latino, .couple_basic, .couple_use,
+       .polonaise, .couple, .young_new, .young_couple, .mature, .pro_am, .wedding, .individual, .kids_new{
+        flex-basis: 100% !important;
+    }
+}
+
+
 
 @media screen and (max-width: 875px){
     .parallax{
@@ -226,10 +253,12 @@
             }
         }
     }
-}
 
-@media screen and (max-width: 500px){
-    .others{
-        height:70vh;
+    .element{
+        .filter{
+            opacity: 1 !important;
+            background: linear-gradient(25deg, rgba(75, 186, 219, 0.4), rgb(194, 115, 255, 0.4) , rgb(27, 62, 128, 0.4) );
+
+        }
     }
 }
