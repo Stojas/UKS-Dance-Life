@@ -63,37 +63,27 @@
                 <p class="desc">Lorem ipsum jasjuindas dnu dsna adjsu ncas auisdsaxcmk asbndsa dsasd nusan xasc nkjsc judsaus auis asu das</p>
             </div>
         </div> -->
-       
+
         <div class="element kids_mix">
             <div class="filter">
                 <h1 class="title-white">Taneczny mix malucha</h1>
-                <p >dla dziecie w wieku 3-5 lat</p>
-                <button routerLink="/about">Zapisz się</button>
+                <p>dla dziecie w wieku 3-5 lat</p>
+                <button routerLink="/kontakt">Zapisz się</button>
             </div>
         </div>
-  
+
         <div class="element kids_couple_sport">
             <div class="filter">
                 <h1 class="title-white">TANIEC TOWARZYSKI</h1>
-                <p >grupa sportowa / grupa początkująca</p>
-                <button routerLink="/about">Zapisz się</button>
+                <button routerLink="/kontakt">Zapisz się</button>
             </div>
         </div>
         <div class="element kids_new">
             <div class="filter">
                 <h1 class="title-white">Taniec nowoczesny</h1>
-                <!-- <p >gr. początkująca (dla dzieci od 6 r.ż.) </p> -->
-                <button routerLink="/about">Zapisz się</button>
+                <button routerLink="/kontakt">Zapisz się</button>
             </div>
         </div>
-        <!-- <div class="element kids_couple">
-            <div class="filter">
-                <h1 class="title-white">TANIEC TOWARZYSKI</h1>
-                <p >grupa rekreacyjna (dla dzieci od 6 r.ż.) 
-                </p>
-                <button routerLink="/about">Zapisz się</button>
-            </div>
-        </div> -->
     </div>
     <h1 class="title-subsegment">Dla młodzieży</h1>
     <div class="offers">
@@ -101,7 +91,7 @@
         <div class="element young_couple">
             <div class="filter">
                 <h1 class="title-white">Kurs tańca towarzyskiego</h1>
-                <button >Zapisz się</button>
+                <button>Zapisz się</button>
             </div>
         </div>
         <div class="element mature">
@@ -109,58 +99,67 @@
                 <h1 class="title-white">PRZEDSTUDNIÓWKOWY KURS TAŃCA </h1>
                 <button>Zapisz się</button>
             </div>
-        </div> 
-      
+        </div>
+
         <div class="element young_new">
             <div class="filter">
-                <h1 class="title-white">TANIEC NOWOCZESNY/JAZZ  </h1>
+                <h1 class="title-white">TANIEC NOWOCZESNY/JAZZ </h1>
                 <button>Zapisz się</button>
             </div>
         </div>
 
     </div>
     <h1 class="title-subsegment">Dla dorosłych</h1>
-    <div class="offers">
-        <div class="element couple_basic">
-            <div class="filter">
-                <h1 class="title-white">Kurs tańca towarzyskiego</h1>
-                <button >Zapisz się</button>
-            </div>
+    <div class="offers slider" >
+        <div class="scroller-right" (click)="move()">
+            <fa-icon [icon]="faChevronRight"></fa-icon>
         </div>
-        <div class="element couple_use">
-            <div class="filter">
-                <h1 class="title-white">Kurs tańca użytkowego</h1>
-                <button >Zapisz się</button>
-            </div>
+        <div class="scroller-left">
+            <fa-icon [icon]="faChevronLeft"></fa-icon>
         </div>
-        <div class="element couple_latino">
-            <div class="filter">
-                <h1 class="title-white">ZAJĘCIA LATINO DLA PAR</h1>
-                <button >Zapisz się</button>
+        <div class="moving" [ngStyle]="{'transform': 'translateX('+(-move1 * 33.33)+'%)'}">
+      
+            <div class="element couple_basic">
+                <div class="filter">
+                    <h1 class="title-white">Kurs tańca towarzyskiego</h1>
+                    <button>Zapisz się</button>
+                </div>
             </div>
-        </div>
-        <div class="element solo_latino">
-            <div class="filter">
-                <h1 class="title-white">LADIES LATINO SOLO </h1>
-                <button >Zapisz się</button>
+            <div class="element couple_use">
+                <div class="filter">
+                    <h1 class="title-white">Kurs tańca użytkowego</h1>
+                    <button>Zapisz się</button>
+                </div>
             </div>
-        </div>
-        <div class="element pro_am">
-            <div class="filter">
-                <h1 class="title-white">KURS TAŃCA PRO-AM </h1>
-                <button >Zapisz się</button>
+            <div class="element couple_latino">
+                <div class="filter">
+                    <h1 class="title-white">ZAJĘCIA LATINO DLA PAR</h1>
+                    <button>Zapisz się</button>
+                </div>
             </div>
-        </div>
-        <div class="element individual">
-            <div class="filter">
-                <h1 class="title-white">LEKCJE INDYWIDUALNE  </h1>
-                <button >Zapisz się</button>
+            <div class="element solo_latino">
+                <div class="filter">
+                    <h1 class="title-white">LADIES LATINO SOLO </h1>
+                    <button>Zapisz się</button>
+                </div>
             </div>
-        </div>
-        <div class="element wedding">
-            <div class="filter">
-                <h1 class="title-white">PIERWSZY TANIEC  </h1>
-                <button >Zapisz się</button>
+            <div class="element pro_am">
+                <div class="filter">
+                    <h1 class="title-white">KURS TAŃCA PRO-AM </h1>
+                    <button>Zapisz się</button>
+                </div>
+            </div>
+            <div class="element individual">
+                <div class="filter">
+                    <h1 class="title-white">LEKCJE INDYWIDUALNE </h1>
+                    <button>Zapisz się</button>
+                </div>
+            </div>
+            <div class="element wedding">
+                <div class="filter">
+                    <h1 class="title-white">PIERWSZY TANIEC </h1>
+                    <button>Zapisz się</button>
+                </div>
             </div>
         </div>
     </div>
@@ -169,19 +168,19 @@
         <!-- <div class="element bachata">
             <div class="filter">
                 <h1 class="title-white">BACHATA</h1>
-                <button routerLink="/about">Zapisz się</button>
+                <button routerLink="/kontakt">Zapisz się</button>
             </div>
         </div> -->
         <div class="element zumba">
             <div class="filter">
                 <h1 class="title-white">ZUMBA</h1>
-                <button routerLink="/about">Zapisz się</button>
+                <button routerLink="/kontakt">Zapisz się</button>
             </div>
         </div>
         <div class="element step">
             <div class="filter">
                 <h1 class="title-white">step fitness</h1>
-                <button routerLink="/about">Zapisz się</button>
+                <button routerLink="/kontakt">Zapisz się</button>
             </div>
         </div>
     </div>
@@ -191,19 +190,19 @@
             <div class="element">
                 
                     <h1 class="title-white">Pierwszy taniec</h1>
-                    <button routerLink="/about">Zapisz się</button>
+                    <button routerLink="/kontakt">Zapisz się</button>
                 
             </div>
             <div class="element">
             
                     <h1 class="title-white">Zajęcia indywidualne</h1>
-                    <button routerLink="/about">Zapisz się</button>
+                    <button routerLink="/kontakt">Zapisz się</button>
             
             </div>
             <div class="element">
                
                     <h1 class="title-white">KURS TAŃCA PRO-AM </h1>
-                    <button routerLink="/about">Zapisz się</button>
+                    <button routerLink="/kontakt">Zapisz się</button>
                 
             </div>
         </div>

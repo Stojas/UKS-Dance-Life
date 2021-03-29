@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { faCalendarAlt, faChevronDown, faEnvelope, faShoePrints, faUserFriends } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarAlt, faChevronDown, faChevronLeft, faChevronRight, faEnvelope, faShoePrints, faUserFriends } from '@fortawesome/free-solid-svg-icons';
 import { StateService } from 'src/app/state.service';
 
 @Component({
@@ -9,11 +9,9 @@ import { StateService } from 'src/app/state.service';
 })
 export class OfferComponent implements OnInit {
 
-  faChevronDown = faChevronDown;
-  faShoePrints = faShoePrints;
-  faCalendarAlt = faCalendarAlt;
-  faEvelope = faEnvelope;
-  faUserFriends = faUserFriends;
+  faChevronRight = faChevronRight;
+  faChevronLeft = faChevronLeft;
+  move1 = 0;
   
   constructor(private stateService: StateService) { }
 
@@ -25,5 +23,9 @@ export class OfferComponent implements OnInit {
   scroll(temp){
     temp.scrollIntoView({behavior:"smooth"});
   }  
+
+  move(){
+    this.move1++;
+  }
 
 }

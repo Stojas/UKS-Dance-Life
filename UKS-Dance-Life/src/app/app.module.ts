@@ -1,3 +1,4 @@
+import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
 import { FooterComponent } from './helper/footer/footer.component';
 import { BrowserModule } from '@angular/platform-browser';
@@ -10,6 +11,7 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { OfferComponent } from './pages/offer/offer.component';
 import { GraphicComponent } from './pages/graphic/graphic.component';
+import { PriceListComponent } from './pages/price-list/price-list.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { GraphicComponent } from './pages/graphic/graphic.component';
     FooterComponent,
     AboutComponent,
     OfferComponent,
-    GraphicComponent
+    GraphicComponent,
+    PriceListComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

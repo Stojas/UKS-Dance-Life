@@ -81,6 +81,40 @@
     //     width: 300px;
     // }
 }
+
+.slider{
+    flex-wrap: nowrap;
+    overflow: hidden;
+    justify-content: flex-start;
+    position: relative;
+    .scroller-right{
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        z-index: 10;
+        font-size: 50px;
+        color: white;
+    }
+    .scroller-left{
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        z-index: 10;
+        font-size: 50px;
+        color: white;
+    }
+    .moving{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        transition: transform 0.5s ease;
+    }
+}
+
+.translate-1{
+    transform: translateX(-10vw);
+}
+
 .parallax {
     /* The image used */
     // background-image: url("img_parallax.jpg");
@@ -122,11 +156,13 @@
 .couple_basic{
     background-image: url('../../../assets/img/TANIEC_TOWARZYSKI_DOROSLI.jpg');
     flex-basis: 25% !important;
+    min-width: 33.333%;
 } 
 
 .couple_use{
     background-image: url('../../../assets/img/TANIEC_UŻYTKOWY_DLA_DOROSŁ.jpg');
     flex-basis: 25% !important;
+    min-width: 33.333%;
 } 
 .zumba{
     background-image: url('../../../assets/img/ZUMBA.jpg');
@@ -182,12 +218,14 @@
 .couple_latino{
     background-image: url('../../../assets/img/LATINO_DLA_PAR.jpg');
     flex-basis: 25% !important;
+    min-width: 33.333%;
 }
 
 
 .solo_latino{
     background-image: url('../../../assets/img/LATINO_SOLO.jpg');
     flex-basis: 25% !important;
+    min-width: 33.333%;
 }
 
 .step{
@@ -198,16 +236,19 @@
 .pro_am{
     background-image: url('../../../assets/img/PRO-AM.jpg');
     flex-basis: 33.333% !important;
+    min-width: 33.333%;
 }
 
 .wedding{
     background-image: url('../../../assets/img/PIERWSZY_TANIEC.jpg');
     flex-basis: 33.333% !important;
+    min-width: 33.333%;
 }
 
 .individual{
     background-image: url('../../../assets/img/LEKCJE_INDYWIDUALNE.jpg');
     flex-basis: 33.333% !important;
+    min-width: 33.333%;
 }
 
 
