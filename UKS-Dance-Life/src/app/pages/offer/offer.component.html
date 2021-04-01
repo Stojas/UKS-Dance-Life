@@ -66,9 +66,20 @@
 
         <div class="element kids_mix">
             <div class="filter">
-                <h1 class="title-white">Taneczny mix malucha</h1>
-                <p>dla dziecie w wieku 3-5 lat</p>
-                <button routerLink="/kontakt">Zapisz się</button>
+                <div class="main">
+                    <h1 class="title-white">Taneczny mix malucha</h1>
+                    <p>dla dziecie w wieku 3-5 lat</p>
+                    <button routerLink="/kontakt">Zapisz się</button>
+                </div>
+                <div class="desc">
+                    <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it to make a type specimen book. It has survived not only
+                        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                        passages, and more recently with desktop publishing software like Aldus PageMaker including
+                        versions of Lorem Ipsum.</p>
+                </div>
             </div>
         </div>
 
@@ -110,56 +121,47 @@
 
     </div>
     <h1 class="title-subsegment">Dla dorosłych</h1>
-    <div class="offers slider" >
-        <div class="scroller-right" (click)="move()">
-            <fa-icon [icon]="faChevronRight"></fa-icon>
+    <div class="offers">
+        <div class="element couple_basic">
+            <div class="filter">
+                <h1 class="title-white">Kurs tańca towarzyskiego</h1>
+                <button>Zapisz się</button>
+            </div>
         </div>
-        <div class="scroller-left">
-            <fa-icon [icon]="faChevronLeft"></fa-icon>
+        <div class="element couple_use">
+            <div class="filter">
+                <h1 class="title-white">Kurs tańca użytkowego</h1>
+                <button>Zapisz się</button>
+            </div>
         </div>
-        <div class="moving" [ngStyle]="{'transform': 'translateX('+(-move1 * 33.33)+'%)'}">
-      
-            <div class="element couple_basic">
-                <div class="filter">
-                    <h1 class="title-white">Kurs tańca towarzyskiego</h1>
-                    <button>Zapisz się</button>
-                </div>
+        <div class="element couple_latino">
+            <div class="filter">
+                <h1 class="title-white">ZAJĘCIA LATINO DLA PAR</h1>
+                <button>Zapisz się</button>
             </div>
-            <div class="element couple_use">
-                <div class="filter">
-                    <h1 class="title-white">Kurs tańca użytkowego</h1>
-                    <button>Zapisz się</button>
-                </div>
+        </div>
+        <div class="element solo_latino">
+            <div class="filter">
+                <h1 class="title-white">LADIES LATINO SOLO </h1>
+                <button>Zapisz się</button>
             </div>
-            <div class="element couple_latino">
-                <div class="filter">
-                    <h1 class="title-white">ZAJĘCIA LATINO DLA PAR</h1>
-                    <button>Zapisz się</button>
-                </div>
+        </div>
+        <div class="element pro_am">
+            <div class="filter">
+                <h1 class="title-white">KURS TAŃCA PRO-AM </h1>
+                <button>Zapisz się</button>
             </div>
-            <div class="element solo_latino">
-                <div class="filter">
-                    <h1 class="title-white">LADIES LATINO SOLO </h1>
-                    <button>Zapisz się</button>
-                </div>
+        </div>
+        <div class="element individual">
+            <div class="filter">
+                <h1 class="title-white">LEKCJE INDYWIDUALNE </h1>
+                <button>Zapisz się</button>
             </div>
-            <div class="element pro_am">
-                <div class="filter">
-                    <h1 class="title-white">KURS TAŃCA PRO-AM </h1>
-                    <button>Zapisz się</button>
-                </div>
-            </div>
-            <div class="element individual">
-                <div class="filter">
-                    <h1 class="title-white">LEKCJE INDYWIDUALNE </h1>
-                    <button>Zapisz się</button>
-                </div>
-            </div>
-            <div class="element wedding">
-                <div class="filter">
-                    <h1 class="title-white">PIERWSZY TANIEC </h1>
-                    <button>Zapisz się</button>
-                </div>
+        </div>
+        <div class="element wedding">
+            <div class="filter">
+                <h1 class="title-white">PIERWSZY TANIEC </h1>
+                <button>Zapisz się</button>
             </div>
         </div>
     </div>
