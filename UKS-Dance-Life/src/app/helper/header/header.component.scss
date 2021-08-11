@@ -4,7 +4,7 @@
     position: fixed;
     z-index: 1001;
     overflow: hidden;
-    height: 100px;
+    height: 90px;
     width: 100vw;
     display: flex;
     .hamburger{
@@ -105,12 +105,12 @@
 }
 
 @keyframes minimize {
-  0%   {height:100px; background-color: rgba(0, 0, 0, 0)}
+  0%   {height:90px; background-color: rgba(0, 0, 0, 0)}
   100% {height:70px; background-color: rgba(0, 0, 0, 1)}
 }
 @keyframes maximize {
   0%   {height:70px; background-color: rgba(0, 0, 0, 1)}
-  100% {height:100px; background-color: rgba(0, 0, 0, 0)}
+  100% {height:90px; background-color: rgba(0, 0, 0, 0)}
 }
 
 @keyframes pseudo {
@@ -127,7 +127,7 @@
     .tab{
       flex-direction: column;
       justify-content: flex-start;
-      padding-top: 100px;
+      padding-top: 75px;
       a{
         margin: 20px;
       }
@@ -138,7 +138,7 @@
     background-color: #000;
   }
   .show{
-    min-height: 425px;
+    min-height: 440px;
   }
   .scrolled-header, .maximize-header{
     animation: none;

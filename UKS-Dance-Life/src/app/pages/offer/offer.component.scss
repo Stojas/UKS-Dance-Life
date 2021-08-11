@@ -1,6 +1,6 @@
 
 .filter{
-    // background: linear-gradient(25deg, rgba(75, 186, 219, 0.7), rgb(194, 115, 255, 0.7) , rgb(27, 62, 128, 0.7) );
+    background: linear-gradient(25deg, rgba(75, 186, 219, 0.7), rgb(194, 115, 255, 0.7) , rgb(27, 62, 128, 0.7) );
     width: 100%;
     height: 100%;
     position: relative;
@@ -9,19 +9,57 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    opacity: 0.1;
+    transition: opacity 0.5s ease-in-out;
+    display: block;
+    @media screen and (max-width: 500px) {
+        display: none;
+        
+    }
 }
 .offers{
     width: 100%;
-    // padding: 50px;
-    // background-color: #f9f9f9;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    .offer__box{
+        width: 80%; 
+        margin: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .desc{      
+            .photo-title{
+                font-family: 'Roboto', sans-serif;
+                font-size: 25px;
+                text-align: left;
+            }   
+            // flex-basis: 500px;  
+            max-width: 500px;
+        }
+
+        @media screen and (max-width: 1000px){
+            flex-direction: column;
+            .element{
+                order: 1;
+                min-height: 500px !important;
+            }
+            .desc{
+                order: 2;
+                height: auto !important;
+                max-height: auto;
+                min-height: auto;
+            }
+        }
+
+    }
     .element{
-        // flex-basis: 33.333%;
-        height: 800px;
-        min-height: 800px;
+        margin: 30px 30px;
+        height: 600px !important;
+        // min-height: 800px;
         background-position: top center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -29,10 +67,14 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        // transition: background-position 0.5s ease-in-out;
+        width: 500px !important;
+        transition: all 0.5s ease-in-out;
         .main{
-            text-align: center;
             flex-basis: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
         .desc{
             opacity: 0;
@@ -42,24 +84,29 @@
             color: white;
         }
         .filter{
-            opacity: 1;
-            transition: all 0.5s ease-in-out;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             background-color: transparent;
+            opacity: 0.4;
+            .main{
+                opacity: 0;
+                transition: opacity 0.5s ease-in-out;            }
         }
         &:hover{
             // background-position: top center;
             .filter{
-                // opacity: 1;
-                background: linear-gradient(25deg, rgba(75, 186, 219, 0.4), rgb(194, 115, 255, 0.4) , rgb(27, 62, 128, 0.4) );
-            }
-            .main{
-                flex-basis: 50%;
                 opacity: 1;
+                .main{
+                    opacity: 1;
+                }
+                // background: linear-gradient(25deg, rgba(75, 186, 219, 0.4), rgb(194, 115, 255, 0.4) , rgb(27, 62, 128, 0.4) );
             }
+            // .main{
+            //     flex-basis: 50%;
+            //     opacity: 1;
+            // }
         }
         @media screen and (max-width: 1000px){
             flex-basis: 50%;
@@ -139,18 +186,14 @@
 
 .couple_basic{
     background-image: url('../../../assets/img/TANIEC_TOWARZYSKI_DOROSLI.jpg');
-    flex-basis: 25% !important;
-    min-width: 33.333%;
 } 
 
 .couple_use{
     background-image: url('../../../assets/img/TANIEC_UŻYTKOWY_DLA_DOROSŁ.jpg');
-    flex-basis: 25% !important;
-    min-width: 33.333%;
+
 } 
 .zumba{
     background-image: url('../../../assets/img/ZUMBA.jpg');
-    flex-basis: 50% !important;;
 } 
 
 .kids_mix{
@@ -171,117 +214,55 @@
 
 .kids_new{
     background-image: url('../../../assets/img/TANIEC_NOWOCZESNY_DLA_DZIECI.jpg');
+    background-position: center;
 }
 
 .polonaise{
     background-image: url('../../../assets/img/PRZEDSTUDNIOWKOWY_KURS_TANCA.jpg');
-    flex-basis: 33.333% !important;
+
 }
 
 .couple{
     background-image: url('../../../assets/img/couple.jpg');
-    flex-basis: 50% !important;
-
 }
 
 .young_new{
     background-image: url('../../../assets/img/JAZZ_NOWOCZESNY_MŁODZIEZ.jpg');
-    flex-basis: 33.333% !important;
 }
 
 .young_couple{
     background-image: url('../../../assets/img/TANIEC_TOWARZYSKI_DLA_MLODZIEZY.jpg');
-    flex-basis: 33.333% !important;
 }
 
 .mature{
     background-image: url('../../../assets/img/PRZEDSTUDNIOWKOWY_KURS_TANCA.jpg');
-    flex-basis: 33.333% !important;
 }
 
 .couple_latino{
     background-image: url('../../../assets/img/LATINO_DLA_PAR.jpg');
-    flex-basis: 25% !important;
-    min-width: 33.333%;
 }
 
 
 .solo_latino{
     background-image: url('../../../assets/img/LATINO_SOLO.jpg');
-    flex-basis: 25% !important;
-    min-width: 33.333%;
 }
 
 .step{
     background-image: url('../../../assets/img/STEP.jpg');
-    flex-basis: 50% !important;
 }
 
 .pro_am{
     background-image: url('../../../assets/img/PRO-AM.jpg');
-    flex-basis: 33.333% !important;
-    min-width: 33.333%;
 }
 
 .wedding{
     background-image: url('../../../assets/img/PIERWSZY_TANIEC.jpg');
-    flex-basis: 33.333% !important;
-    min-width: 33.333%;
 }
 
 .individual{
     background-image: url('../../../assets/img/LEKCJE_INDYWIDUALNE.jpg');
-    flex-basis: 33.333% !important;
-    min-width: 33.333%;
 }
 
-
-// @media screen and (max-width: 1490px){
-//     .couple_latino, .solo_latino, .couple_basic, .couple_use{
-//         flex-basis: 50% !important;
-//     }
-
-// }
-
-.kids_mix, .kids_basic, .kids_couple, .kids_couple_sport,
-.solo_latino, .couple_basic, .couple_use, .step, .zumba,
- .couple_latino, .solo_latino, .couple_basic, .couple_use,
-  .polonaise, .couple, .young_new, .young_couple, .mature, .pro_am, .wedding, .individual, .kids_new{
-   width: 80%;
-//    max-width: 1400px;
-}
-
-@media screen and (max-width: 1200px){
-    .kids_mix, .kids_basic, .kids_couple, .kids_couple_sport,
-.solo_latino, .couple_basic, .couple_use, .step, .zumba,
- .couple_latino, .solo_latino, .couple_basic, .couple_use,
-  .polonaise, .couple, .young_new, .young_couple, .mature, .pro_am, .wedding, .individual, .kids_new{
-        width: 100%;
-    }
-
-}
-
-// @media screen and (max-width: 1490px){
-//     .kids_mix, .kids_basic, .kids_couple, .kids_couple_sport,
-//      .solo_latino, .couple_basic, .couple_use, .step, .zumba,
-//       .couple_latino, .solo_latino, .couple_basic, .couple_use,
-//        .polonaise, .couple, .young_new, .young_couple, .mature, .pro_am, .wedding, .individual, .kids_new{
-//         flex-basis: 50% !important;
-//     }
-
-//     .kids_new, .young_new, .wedding{
-//         flex-basis: 100% !important;
-//     }
-// }
-
-// @media screen and (max-width: 1001px){
-//     .kids_mix, .kids_basic, .kids_couple, .kids_couple_sport,
-//      .solo_latino, .couple_basic, .couple_use, .step, .zumba,
-//       .couple_latino, .solo_latino, .couple_basic, .couple_use,
-//        .polonaise, .couple, .young_new, .young_couple, .mature, .pro_am, .wedding, .individual, .kids_new{
-//         flex-basis: 100% !important;
-//     }
-// }
 
 
 
@@ -290,16 +271,26 @@
         .filter{
             flex-direction: column;
             .element{
-                flex-basis: 100% !important;
+                flex-basis: auto !important;
+                height: 100vh;
             }
         }
     }
 
     .element{
         .filter{
-            opacity: 1 !important;
+            opacity: 1!important;
             background: linear-gradient(25deg, rgba(75, 186, 219, 0.4), rgb(194, 115, 255, 0.4) , rgb(27, 62, 128, 0.4) );
-
+            .main{
+                display: none;
+            }
         }
     }
+}
+
+@media screen and (min-width: 1050px){
+    .kids_new{
+        background-size: center!important;
+    }
+    
 }

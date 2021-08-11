@@ -1,103 +1,60 @@
 <div class="parallax main-first">
-    <div class="filter">
+  <div class="filter">
     <!-- <img class="logo" src="assets/img/uks_logo_header.png" data-aos="fade-left" data-aos-delay="500"> -->
-    <div class="text" data-aos="fade-left" data-aos-delay="500">UKS DANCE LIFE</div>
+    <div class="text" data-aos="fade-left" data-aos-delay="500">
+      UKS DANCE LIFE
+    </div>
     <div class="separator" data-aos="fade-down" data-aos-delay="100"></div>
-    <div class="text quot" data-aos="fade-right" data-aos-delay="1000">&quot;...z miłości do tańca&quot;</div>
-    <div class="arrow-down blink" (click)="scroll(info)" data-aos="fade-up" data-aos-delay="3000">
-        <fa-icon class="arrow"  [icon]="faChevronDown"></fa-icon>
+    <div class="text quot" data-aos="fade-right" data-aos-delay="1000">
+      &quot;...z miłości do tańca&quot;
     </div>
+    <div
+      class="arrow-down blink"
+      (click)="scroll(info)"
+      data-aos="fade-up"
+      data-aos-delay="3000"
+    >
+      <fa-icon class="arrow" [icon]="faChevronDown"></fa-icon>
+    </div>
+  </div>
 </div>
-</div>
-<section class="main intro"  #info>
-    <h1 data-aos="fade-up" class="title-black">Opis pierwszy</h1>
-    <p data-aos="fade-up" class="desc">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<section class="main intro" #info>
+  <h1 data-aos="fade-up" class="title-black">Opis pierwszy</h1>
+  <p data-aos="fade-up" class="desc">
+    orem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the
+    1500s, when an unknown printer took a galley of type and scrambled it to
+    make a type specimen book. It has survived not only five centuries, but also
+    the leap into electronic typesetting, remaining essentially unchanged. It
+    was popularised in the 1960s with the release of Letraset sheets containing
+    Lorem Ipsum passages, and more recently with desktop publishing software
+    like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
 </section>
-<!-- <section class="main" style="background-color: #fcfcfc" >
-    <div data-aos="fade-up" class="title">
-        <h1>Oferta</h1>
-    </div>
-    <div data-aos="fade-up" class="offers">
-        <div class="offer">
-            <div class="img wedding"></div>
-            <div class="title"><h2>Pierwszy taniec</h2></div>
-            <div class="offer-link" data-aos="fade-up"><p>Zobacz ofertę</p></div>
-        </div>
-        <div class="offer">
-            <div class="img ladies_latino"></div>
-            <div class="title"><h2>Ladies Latino</h2></div>
-            <div class="offer-link" data-aos="fade-up"><p>Zobacz ofertę</p></div>
-        </div>
-        <div class="offer">
-            <div class="img couple"></div>
-            <div class="title"><h2>W parach</h2></div>
-            <div class="offer-link" data-aos="fade-up"><p>Zobacz ofertę</p></div>
-        </div>
-        <div class="offer">
-            <div class="img kids"></div>
-            <div class="title"><h2>Dla dzieci</h2></div>
-            <div class="offer-link" data-aos="fade-up"><p>Zobacz ofertę</p></div>
-        </div>
-        <div class="offer"> <div class="img middle"></div>
-        <div class="title"><h2>Dla młodzieży</h2></div>
-        <div class="offer-link" data-aos="fade-up"><p>Zobacz ofertę</p></div></div>
-       
-        <div class="offer">
-            <div class="img old"></div>
-            <div class="title"><h2>Dla seniorów</h2></div>
-            <div class="offer-link" data-aos="fade-up"><p>Zobacz ofertę</p></div>
-        </div>
-    </div>
-</section> -->
-<!-- <section class="main">
-    <div data-aos="fade-up" class="title">
-        <h1>O nas</h1>
-    </div>
-    <div class="dancer">
-        <img data-aos="fade-up" src="assets/img/misia.jpg">
-        <div data-aos="fade-up" class="desc">
-            <div class="title">
-                Michalina Kuklińska
-            </div>
-            <p>Nauczycielka tańca</p>
-        </div>
-    </div>
-    <div class="dancer">
-        <div data-aos="fade-up" class="desc">
-            <div class="title">
-                Filip Kukliński
-            </div>
-            <p>Nauczyciel tańca</p>
-        </div>
-        <img data-aos="fade-up" src="assets/img/filip.jpg">
-
-    </div>
-</section> -->
-
 <section class="info parallax">
-    <div class="filter">
-        <h1 data-aos="fade-up" class="title-white">Nasza oferta</h1>
-        <div data-aos="fade-up" class="row">
-            <div class="element">
-                <fa-icon   [icon]="faShoePrints"></fa-icon>
-                <p class="desc">Nasza oferta</p>
-                <button routerLink="/oferta">Sprawdź</button>
-            </div>
-            <div class="element">
-                <fa-icon   [icon]="faCalendarAlt"></fa-icon>
-                <p class="desc">Nasz grafik</p>
-                <button routerLink="/grafik">Sprawdź</button>
-            </div>
-            <div class="element">
-                <fa-icon   [icon]="faEvelope"> </fa-icon>
-                <p class="desc">Kontakt</p>
-                <button routerLink="/kontakt">Sprawdź</button>
-            </div> 
-            <div class="element">
-                <fa-icon   [icon]="faUserFriends"> </fa-icon>
-                <p class="desc">O nas</p>
-                <button routerLink="/o-nas">Sprawdź</button>
-            </div>
-        </div>
+  <div class="filter">
+    <h1 data-aos="fade-up" class="title-white">Nasza oferta</h1>
+    <div data-aos="fade-up" class="row">
+      <div class="element">
+        <fa-icon [icon]="faShoePrints"></fa-icon>
+        <p class="desc">Nasza oferta</p>
+        <button routerLink="/oferta">Sprawdź</button>
+      </div>
+      <div class="element">
+        <fa-icon [icon]="faCalendarAlt"></fa-icon>
+        <p class="desc">Nasz grafik</p>
+        <button routerLink="/grafik">Sprawdź</button>
+      </div>
+      <div class="element">
+        <fa-icon [icon]="faEvelope"> </fa-icon>
+        <p class="desc">Kontakt</p>
+        <button routerLink="/kontakt">Sprawdź</button>
+      </div>
+      <div class="element">
+        <fa-icon [icon]="faUserFriends"> </fa-icon>
+        <p class="desc">O nas</p>
+        <button routerLink="/o-nas">Sprawdź</button>
+      </div>
     </div>
+  </div>
 </section>

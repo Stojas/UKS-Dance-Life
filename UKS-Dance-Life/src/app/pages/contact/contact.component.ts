@@ -1,7 +1,10 @@
+import { OffersService } from './../../services/offers.service';
 import { Component, HostListener, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { DomSanitizer } from '@angular/platform-browser';
 import { faCalendarAlt, faChevronDown, faEnvelope, faShoePrints, faUserFriends } from '@fortawesome/free-solid-svg-icons';
 import { StateService } from 'src/app/state.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
@@ -9,19 +12,32 @@ import { StateService } from 'src/app/state.service';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  url = "https://www.google.com/maps/embed/place/Pozna%C5%84ska+42,+88-110+Inowroc%C5%82aw/@52.7885233,18.2580125,16.48z/data=!4m5!3m4!1s0x470350f29973baf5:0x989ee9a509b69735!8m2!3d52.7896908!4d18.2609614";
-  // src =  this.url.replace("watch?v=", "v/");
-  src = this.url;
   
-  constructor(private stateService: StateService, public sanitizer: DomSanitizer) { }
+  public form: FormGroup;
+
+  constructor(private stateService: StateService, public sanitizer: DomSanitizer, public offerService: OffersService, public http: HttpClient) { }
 
 
   ngOnInit(): void {
     this.stateService.isMain.next(false);
+    this.form = new FormGroup({
+      name: new FormControl(null, Validators.minLength(3)),
+      lastname: new FormControl(null, Validators.minLength(3)),
+      message: new FormControl(null, Validators.minLength(20)),
+    })
+
+    if(this.offerService.getMessage().length){
+      this.form.controls['message'].setValue(this.offerService.getMessage());
+    }
   }
 
   scroll(temp){
     temp.scrollIntoView({behavior:"smooth"});
   }  
+
+  sendMessage(){
+    console.warn("SEnd message", this.form);
+    this.http.post("assets/img/email.php", "stojko.lukasz@gmail.com").subscribe();
+  }
 
 }

@@ -73,9 +73,20 @@ html, body{
             // color: rgb(194, 115, 255, 0.7);
             cursor: pointer;
         }
+
+        &.dark{
+            color: #343434;
+            background-color: transparent;
+            border-color: #343434;
+            &:hover{
+                background-color: #343434;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
     }
     .box{
-        padding-top: 100px;
+        padding-top: 90px;
         min-height: 100vh;
         width: 100%;
     }

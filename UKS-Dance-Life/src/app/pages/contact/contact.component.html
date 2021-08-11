@@ -1,11 +1,35 @@
 
 <div class="box">
     <h1 class="title-segment">Kontakt</h1>
-    <div class="map">
-        <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(url)"  width="600"
-        height="450"
-        frameborder="0" style="border:0"
-        allowfullscreen>
-          </iframe>
+    <div class="main">
+        <div class="location">
+            <h2>LOKACJA</h2>
+            <h3>Poznańska 12, 88-100 Inowrocław</h3>
+            <h2 style="margin-top: 50px;">Email   </h2>
+            <h3>uksemail@gmail.com</h3>
+            <h2 style="margin-top: 50px;">ZNAJDŹ NAS!</h2>
+            <a  href="https://www.instagram.com/uksdancelife/?hl=pl" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a  href="https://www.facebook.com/uksdancelifeinowroclaw" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            
+        </div>
+        <form class="mail" [formGroup]="form" (submit)="sendMessage()">
+            <h2>NAPISZ DO NAS!</h2>
+            <div class="input-row">
+                <h3>Imię</h3>
+                <input [formControl]="form.controls['name']" name="name" id="name">
+            </div>
+            <div class="input-row">
+                <h3>Nazwisko</h3>
+                <input  [formControl]="form.controls['lastname']" name="lastname" id="lastname">
+            </div>
+            <div class="input-row">
+                <h3>Wiadomość</h3>
+                <textarea  [formControl]="form.controls['message']" rows="10"></textarea>
+            </div>
+            <div class="row">
+                <button class="dark" type="submit">Wyślij wiadomość!</button>
+            </div>
+        </form>
     </div>
+    <h1 class="title-segment special-segment">Czekamy na Ciebie!</h1>
 </div>  
