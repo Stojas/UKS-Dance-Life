@@ -34,6 +34,7 @@ export class ContactComponent implements OnInit {
   scroll(temp){
     temp.scrollIntoView({behavior:"smooth"});
   }  
+  
 
   sendMessage(){
     console.warn("SEnd message", this.form);
