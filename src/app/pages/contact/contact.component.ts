@@ -30,6 +30,9 @@ export class ContactComponent implements OnInit {
 
     if(this.offerService.getMessage().length){
       this.form.controls['message'].setValue(this.offerService.getMessage());
+      if(this.form.controls['message'].value){
+        this.link = '' + this.link + '&body=' + this.form.controls['message'].value;
+      }
     }
   }
 
