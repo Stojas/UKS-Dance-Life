@@ -15,6 +15,7 @@ export class ContactComponent implements OnInit {
   
   public form: FormGroup;
   faEvelope = faEnvelope;
+  link: string = 'mailto:stojko.lukasz@gmail.com?subject=Zapisy na zajęcia';
 
   constructor(private stateService: StateService, public sanitizer: DomSanitizer, public offerService: OffersService, public http: HttpClient) { }
 
@@ -39,7 +40,9 @@ export class ContactComponent implements OnInit {
 
   sendMessage(){
     console.warn("SEnd message", this.form);
-    this.http.post("assets/img/email.php", "stojko.lukasz@gmail.com").subscribe();
+    if(this.form.controls['message'].value){
+      this.link = '' + this.link + '&body=' + this.form.controls['message'].value;
+    }
   }
 
 }

@@ -14,8 +14,8 @@
         </div>
         <div class="mail">
             <h2>NAPISZ DO NAS!</h2>
-            <a [href]="'mailto:stojko.lukasz@gmail.com?subject='+ 'Zapisy na zajęcia' +'&body=' + form.controls['message'].value ? form.controls['message'].value : '' +''"><h3>Kliknij tutaj i napisz do nas, jakie zajęcia Cię interesują, a na pewno się odezwiemy!</h3></a>
-            <a [href]="'mailto:stojko.lukasz@gmail.com?subject='+ 'Zapisy na zajęcia' +'&body=' + form.controls['message'].value ? form.controls['message'].value : '' +''" style="font-size: 50px"><fa-icon [icon]="faEvelope"> </fa-icon></a>
+            <a [href]="link"><h3>Kliknij tutaj i napisz do nas, jakie zajęcia Cię interesują, a na pewno się odezwiemy!</h3></a>
+            <a [href]="link" style="font-size: 50px"><fa-icon [icon]="faEvelope"> </fa-icon></a>
         </div>
         <!-- <form class="mail" [formGroup]="form" (submit)="sendMessage()">
             <h2>NAPISZ DO NAS!</h2>
