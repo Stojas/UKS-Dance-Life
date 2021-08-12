@@ -14,6 +14,7 @@ import { HttpClient } from '@angular/common/http';
 export class ContactComponent implements OnInit {
   
   public form: FormGroup;
+  faEvelope = faEnvelope;
 
   constructor(private stateService: StateService, public sanitizer: DomSanitizer, public offerService: OffersService, public http: HttpClient) { }
 

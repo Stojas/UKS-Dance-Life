@@ -47,11 +47,15 @@
         .input-row{
             padding: 10px 0;
         }
-        h2, h4{
+        h2, h4, a{
             font-family: 'Roboto', sans-serif;
             // font-size: 35px;
             letter-spacing: 2px;
             font-weight: 400;
+        }
+        a{
+            letter-spacing: 1px;
+            text-decoration: none;
         }
         h3{
             padding: none;
