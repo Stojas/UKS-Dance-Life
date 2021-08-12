@@ -27,7 +27,6 @@ export class OfferComponent implements OnInit {
   }  
 
   setMessage(el: STATES){
-    console.warn("ELEMENT", el);
     this.offersService.newMessage(el);
   }
 

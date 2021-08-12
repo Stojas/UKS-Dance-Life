@@ -46,14 +46,14 @@
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </p>
-        <p> <button class="dark" routerLink="/kontakt">Zapisz się</button></p>
+        <p> <button class="dark" (click)="setMessage(STATES.TANIECTOWARZYSKIDZIECI)"  routerLink="/kontakt">Zapisz się</button></p>
       </div>
 
       <div class="element kids_couple_sport">
         <div class="filter">
           <div class="main">
             <h1 class="title-white">TANIEC TOWARZYSKI</h1>
-            <button routerLink="/kontakt">Zapisz się</button>
+            <button routerLink="/kontakt" (click)="setMessage(STATES.TANIECTOWARZYSKIDZIECI)" >Zapisz się</button>
           </div>
         </div>
       </div>
@@ -64,7 +64,7 @@
         <div class="filter">
           <div class="main">
             <h1 class="title-white">Taniec nowoczesny</h1>
-            <button  routerLink="/kontakt">Zapisz się</button>
+            <button (click)="setMessage(STATES.TANIECNOWOCZESNY)"   routerLink="/kontakt">Zapisz się</button>
           </div>
         </div>
       </div>
@@ -82,7 +82,7 @@
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </p>
-        <p> <button class="dark" routerLink="/kontakt">Zapisz się</button></p>
+        <p> <button class="dark" (click)="setMessage(STATES.TANIECNOWOCZESNY)"  routerLink="/kontakt">Zapisz się</button></p>
       </div>
     </div>
   </div>
@@ -90,7 +90,7 @@
   <div class="offers">
     <div class="offer__box" data-aos="fade-up">
       <div class="desc">
-        <p class="photo-title">Dla młodzieży</p>
+        <p class="photo-title">Kurs tańca towarzyskiego</p>
         <p class="desc">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -102,14 +102,14 @@
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </p>
-        <p> <button class="dark" routerLink="/kontakt">Zapisz się</button></p>
+        <p> <button class="dark" (click)="setMessage(STATES.TANIECTOWARZYSKMLODZIEZ)" routerLink="/kontakt">Zapisz się</button></p>
       </div>
 
       <div class="element young_couple">
         <div class="filter">
           <div class="main">
             <h1 class="title-white">Kurs tańca towarzyskiego</h1>
-            <button>Zapisz się</button>
+            <button (click)="setMessage(STATES.TANIECTOWARZYSKMLODZIEZ)"  routerLink="/kontakt">Zapisz się</button>
           </div>
         </div>
       </div>
@@ -120,7 +120,7 @@
         <div class="filter">
           <div class="main">
             <h1 class="title-white">PRZEDSTUDNIÓWKOWY KURS TAŃCA</h1>
-            <button>Zapisz się</button>
+            <button (click)="setMessage(STATES.TANIECPRZEDSTUDNIOWKOWYMLODZIEZ)"  routerLink="/kontakt">Zapisz się</button>
           </div>
         </div>
       </div>
@@ -139,7 +139,7 @@
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </p>
-        <p> <button class="dark" routerLink="/kontakt">Zapisz się</button></p>
+        <p> <button class="dark" (click)="setMessage(STATES.TANIECPRZEDSTUDNIOWKOWYMLODZIEZ)"  routerLink="/kontakt">Zapisz się</button></p>
       </div>
     </div>
 
@@ -157,14 +157,14 @@
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </p>
-        <p> <button class="dark" routerLink="/kontakt">Zapisz się</button></p>
+        <p> <button class="dark"  (click)="setMessage(STATES.TANIECNOWOCZESNYMLODZIEZ)"  routerLink="/kontakt">Zapisz się</button></p>
       </div>
 
       <div class="element young_new">
         <div class="filter">
           <div class="main">
             <h1 class="title-white">TANIEC NOWOCZESNY/JAZZ</h1>
-            <button>Zapisz się</button>
+            <button  (click)="setMessage(STATES.TANIECNOWOCZESNYMLODZIEZ)"  routerLink="/kontakt">Zapisz się</button>
           </div>
         </div>
       </div>
@@ -177,7 +177,7 @@
         <div class="filter">
           <div class="main">
             <h1 class="title-white">Kurs tańca towarzyskiego</h1>
-            <button>Zapisz się</button>
+            <button (click)="setMessage(STATES.TANIECNOWOCZESNYDOROSLI)"  routerLink="/kontakt">Zapisz się</button>
           </div>
         </div>
       </div>
@@ -196,7 +196,7 @@
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </p>
-        <p> <button class="dark" routerLink="/kontakt">Zapisz się</button></p>
+        <p> <button class="dark" (click)="setMessage(STATES.TANIECNOWOCZESNYDOROSLI)"   routerLink="/kontakt">Zapisz się</button></p>
       </div>
     </div>
 
@@ -215,14 +215,14 @@
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </p>
-        <p> <button class="dark" routerLink="/kontakt">Zapisz się</button></p>
+        <p> <button class="dark" (click)="setMessage(STATES.UZYTKOWY)"   routerLink="/kontakt" routerLink="/kontakt">Zapisz się</button></p>
       </div>
 
       <div class="element couple_use">
         <div class="filter">
           <div class="main">
             <h1 class="title-white">Kurs tańca użytkowego</h1>
-            <button>Zapisz się</button>
+            <button (click)="setMessage(STATES.UZYTKOWY)"   routerLink="/kontakt">Zapisz się</button>
           </div>
         </div>
       </div>
@@ -233,7 +233,7 @@
         <div class="filter">
           <div class="main">
             <h1 class="title-white">ZAJĘCIA LATINO DLA PAR</h1>
-            <button>Zapisz się</button>
+            <button (click)="setMessage(STATES.LATINODLAPAR)"   routerLink="/kontakt">Zapisz się</button>
           </div>
         </div>
       </div>
@@ -252,7 +252,7 @@
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </p>
-        <p> <button class="dark" routerLink="/kontakt">Zapisz się</button></p>
+        <p> <button class="dark" (click)="setMessage(STATES.LATINODLAPAR)"   routerLink="/kontakt" routerLink="/kontakt">Zapisz się</button></p>
       </div>
     </div>
 
@@ -271,14 +271,14 @@
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </p>
-        <p> <button class="dark" routerLink="/kontakt">Zapisz się</button></p>
+        <p> <button (click)="setMessage(STATES.LATINOSOLO)"   routerLink="/kontakt" class="dark" routerLink="/kontakt">Zapisz się</button></p>
       </div>
 
       <div class="element solo_latino">
         <div class="filter">
           <div class="main">
             <h1 class="title-white">LADIES LATINO SOLO</h1>
-            <button>Zapisz się</button>
+            <button (click)="setMessage(STATES.LATINOSOLO)"   routerLink="/kontakt">Zapisz się</button>
           </div>
         </div>
       </div>
@@ -289,7 +289,7 @@
         <div class="filter">
           <div class="main">
             <h1 class="title-white">KURS TAŃCA PRO-AM</h1>
-            <button>Zapisz się</button>
+            <button (click)="setMessage(STATES.PROAM)"   routerLink="/kontakt">Zapisz się</button>
           </div>
         </div>
       </div>
@@ -308,7 +308,7 @@
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </p>
-        <p> <button class="dark" routerLink="/kontakt">Zapisz się</button></p>
+        <p> <button  (click)="setMessage(STATES.PROAM)"   routerLink="/kontakt" class="dark" routerLink="/kontakt">Zapisz się</button></p>
       </div>
     </div>
 
@@ -327,14 +327,14 @@
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </p>
-        <p> <button class="dark" routerLink="/kontakt">Zapisz się</button></p>
+        <p> <button class="dark" (click)="setMessage(STATES.INDYWIDUALNE)"   routerLink="/kontakt" routerLink="/kontakt">Zapisz się</button></p>
       </div>
 
       <div class="element individual">
         <div class="filter">
           <div class="main">
             <h1 class="title-white">LEKCJE INDYWIDUALNE</h1>
-            <button>Zapisz się</button>
+            <button (click)="setMessage(STATES.INDYWIDUALNE)"   routerLink="/kontakt">Zapisz się</button>
           </div>
         </div>
       </div>
@@ -345,7 +345,7 @@
         <div class="filter">
           <div class="main">
             <h1 class="title-white">PIERWSZY TANIEC</h1>
-            <button>Zapisz się</button>
+            <button (click)="setMessage(STATES.PIERWSZYTANIEC)"   routerLink="/kontakt">Zapisz się</button>
           </div>
         </div>
       </div>
@@ -364,7 +364,7 @@
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </p>
-        <p> <button class="dark" routerLink="/kontakt">Zapisz się</button></p>
+        <p> <button  (click)="setMessage(STATES.PIERWSZYTANIEC)"   routerLink="/kontakt" class="dark" routerLink="/kontakt">Zapisz się</button></p>
       </div>
     </div>
   </div>
@@ -386,14 +386,14 @@
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </p>
-        <p> <button class="dark" routerLink="/kontakt">Zapisz się</button></p>
+        <p> <button (click)="setMessage(STATES.ZUMBA)"   routerLink="/kontakt" class="dark" routerLink="/kontakt">Zapisz się</button></p>
       </div>
 
       <div class="element zumba">
         <div class="filter">
           <div class="main">
             <h1 class="title-white">ZUMBA</h1>
-            <button routerLink="/kontakt">Zapisz się</button>
+            <button (click)="setMessage(STATES.ZUMBA)"   routerLink="/kontakt" routerLink="/kontakt">Zapisz się</button>
           </div>
         </div>
       </div>
@@ -404,7 +404,7 @@
         <div class="filter">
           <div class="main">
             <h1 class="title-white">step fitness</h1>
-            <button routerLink="/kontakt">Zapisz się</button>
+            <button (click)="setMessage(STATES.STEP)"   routerLink="/kontakt">Zapisz się</button>
           </div>
         </div>
       </div>
@@ -423,7 +423,7 @@
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </p>
-        <p> <button class="dark" routerLink="/kontakt">Zapisz się</button></p>
+        <p> <button (click)="setMessage(STATES.STEP)"    class="dark" routerLink="/kontakt">Zapisz się</button></p>
       </div>
     </div>
   </div>
