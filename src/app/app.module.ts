@@ -33,7 +33,7 @@ import { HttpClientModule } from '@angular/common/http';
     FontAwesomeModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
