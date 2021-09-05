@@ -26,12 +26,15 @@ export class OffersService {
 
 export enum STATES {
   TANECZNYMIXMALUCHA = "Proszę o zapisanie na zajęcia Taneczny Mix Malucha!",
+  TANECZNYMIX = "Proszę o zapisanie na zajęcia Taneczny Mix!",
   TANIECTOWARZYSKIDZIECI = "Proszę o zapisanie na zajęcia Taniec Towarzyski dla dzieci",
   TANIECNOWOCZESNY = "Proszę o zapisanie na zajęcia Taniec Nowoczesny dla dzieci",
+  HIPHOPKIDS = "Proszę o zapisanie mojego dziecka na zajęcia HipHop Kids!",
   TANIECTOWARZYSKMLODZIEZ = "Proszę o zapisanie na zajęcia Taniec Towarzyski dla młodzieży",
   TANIECPRZEDSTUDNIOWKOWYMLODZIEZ = "Proszę o zapisanie na zajęcia Taniec Przedstudniówkowy",
   TANIECNOWOCZESNYMLODZIEZ = "Proszę o zapisanie na zajęcia Tańca Nowoczesnego",
   TANIECNOWOCZESNYDOROSLI = "Proszę o zapisanie na zajęcia Tańca Nowoczesnego",
+  TANIECTOWARZYSKIDOROSLI = "Proszę o zapisanie mnie na zajęcia Tańca Towarzyskiego",
   STEP = "Proszę o zapisanie na zajęcia Step",
   ZUMBA = "Proszę o zapisanie na zajęcia Zumba",
   PIERWSZYTANIEC = "Proszę o zapisanie na zajęcia Pierwszy Taniec",

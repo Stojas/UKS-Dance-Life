@@ -1,6 +1,6 @@
-<section class="box">
+<section id="UKS-Dance-Life-Oferta" class="box">
   <h1 class="title-segment">Oferta</h1>
-  <h1 class="title-subsegment">Dla najmłodszych</h1>
+  <h1 class="title-subsegment">Dla dzieci</h1>
 
   <div class="offers">
     
@@ -28,18 +28,28 @@
 
     <div class="offer__box" data-aos="fade-up">
       <div class="desc">
-        <p class="photo-title">Taniec towarzyski</p>
+        <p class="photo-title">Taneczny mix</p>
         <p class="desc">
-          Zajęcia skierowane dla dzieci od 6 roku życia, które chcą rozpocząć swoją przygodę z tańcem.
-           Taniec wpływa wielowymiarowo na rozwój dziecka. Kształtuje jego rozwój motoryczny,
-            uczy współpracy z rówieśnikami i przede wszystkim zapewnia mnóstwo zabawy.
-             Na zajęciach Twoje dziecko pozna podstawowe kroki z tańców standardowych i latynoamerykańskich.
-              Pod koniec trwania kursu dzieci prezentują swoje umiejętności na występie i otrzymują swój pierwszy „taneczny dyplom”.
-               Po ukończonym kursie istnieje możliwość kontynuowania nauki w grupie sportowej.
+          Zajęcia skierowane dla dzieci powyżej 6 lat (kontynuacja Tanecznego Mixu Malucha).
+          Zajęcia te łączą w sobie różne style tańca tak, aby dziecko podczas pierwszego etapu
+           nauki mogło wybrać coś odpowiedniego dla siebie. Poprzez zabawę połączoną z nauką
+           choreografii tanecznych dzieci kształtują muzykalność, koordynację oraz poprawiają
+            swoją sprawność ruchową.  
         </p>
-        <p> <button class="dark" (click)="setMessage(STATES.TANIECTOWARZYSKIDZIECI)"  routerLink="/kontakt">Zapisz się</button></p>
+        <p> <button class="dark" (click)="setMessage(STATES.TANECZNYMIX)"  routerLink="/kontakt">Zapisz się</button></p>
       </div>
 
+      <div class="element kids_basic">
+        <div class="filter">
+          <div class="main">
+            <h1 class="title-white">TANECZNY MIX</h1>
+            <button routerLink="/kontakt" (click)="setMessage(STATES.TANECZNYMIX)" >Zapisz się</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="offer__box" data-aos="fade-up">
       <div class="element kids_couple_sport">
         <div class="filter">
           <div class="main">
@@ -48,10 +58,50 @@
           </div>
         </div>
       </div>
+
+      <div class="desc">
+        <p class="photo-title">Taniec towarzyski</p>
+        <p class="desc">
+          Zajęcia skierowane dla dzieci od 6 roku życia, 
+          które chcą rozpocząć swoją przygodę z tańcem.
+           Taniec wpływa wielowymiarowo na rozwój dziecka. 
+           Kształtuje jego rozwój motoryczny, uczy współpracy
+            z rówieśnikami i przede wszystkim zapewnia mnóstwo
+             zabawy. Na zajęciach Twoje dziecko pozna podstawowe 
+             kroki z tańców standardowych i latynoamerykańskich.
+              Pod koniec trwania kursu dzieci prezentują swoje umiejętności na 
+              występie i otrzymują swój pierwszy „taneczny dyplom”. Po ukończonym
+               kursie istnieje możliwość kontynuowania nauki w grupie sportowej.
+        </p>
+        <p> <button class="dark" (click)="setMessage(STATES.TANIECTOWARZYSKIDZIECI)"  routerLink="/kontakt">Zapisz się</button></p>
+      </div>
     </div>
 
     <div class="offer__box" data-aos="fade-up">
-      <div class="element kids_new">
+      <div class="desc">
+        <p class="photo-title">HipHop Kids</p>
+        <p class="desc">
+          Hip-hop to styl tańca stworzony dla wszystkich energicznych dzieci. Pozytywne emocje,
+           rytmiczna muzyka oraz różnorodne, widowiskowe kroki – to połączenie, które Twoje dziecko 
+           z pewnością pokocha. Zajęcia te mają na celu wprowadzenie najmłodszych w taneczny świat
+            hip-hopu poprzez poznanie podstawowych umiejętności pracy z muzyką, rytmem i nauką choreografii. 
+            Nasze zajęcia to nie tylko nauka kroków, ale również fantastyczna zabawa dla dziecka!
+        </p>
+        <p> <button class="dark" (click)="setMessage(STATES.HIPHOPKIDS)"  routerLink="/kontakt">Zapisz się</button></p>
+      </div>
+
+      <div class="element hiphopkids">
+        <div class="filter">
+          <div class="main">
+            <h1 class="title-white">HIPHOP KIDS</h1>
+            <button routerLink="/kontakt" (click)="setMessage(STATES.HIPHOPKIDS)" >Zapisz się</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="offer__box" data-aos="fade-up">
+      <div class="element nowoczesny">
         <div class="filter">
           <div class="main">
             <h1 class="title-white">Taniec nowoczesny</h1>
@@ -64,16 +114,17 @@
         <p class="photo-title">Taniec nowoczesny</p>
         <p class="desc">
           Taniec nowoczesny to wybuchowa mieszanka różnych stylów tanecznych. 
-          Podstawą zajęć jest nauka energetycznego disco dance,
-           ale tancerze będę mieli również okazję poznać elementy innych stylów,
-           jak taniec jazzowy, taniec klasyczny czy hip-hop, które zapewniają im wszechstronny rozwój umiejętności. 
+          Podstawą zajęć jest nauka energetycznego disco dance, ale tancerze będę
+           mieli również okazję poznać elementy innych stylów, jak taniec jazzowy,
+            taniec klasyczny czy hip-hop, które zapewniają im wszechstronny rozwój umiejętności. 
         </p>
         <p> <button class="dark" (click)="setMessage(STATES.TANIECNOWOCZESNY)"  routerLink="/kontakt">Zapisz się</button></p>
       </div>
     </div>
+
   </div>
-  <h1 class="title-subsegment">Dla młodzieży</h1>
-  <div class="offers">
+  <!-- <h1 class="title-subsegment">Dla młodzieży</h1> -->
+  <!-- <div class="offers">
     <div class="offer__box" data-aos="fade-up">
       <div class="desc">
         <p class="photo-title">Kurs tańca towarzyskiego</p>
@@ -155,54 +206,29 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <h1 class="title-subsegment">Dla dorosłych</h1>
   <div class="offers">
-    <div class="offer__box" data-aos="fade-up">
-      <div class="element couple_basic">
-        <div class="filter">
-          <div class="main">
-            <h1 class="title-white">Kurs tańca towarzyskiego</h1>
-            <button (click)="setMessage(STATES.TANIECNOWOCZESNYDOROSLI)"  routerLink="/kontakt">Zapisz się</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="desc">
-        <p class="photo-title">Taniec nowoczesny / jazz</p>
-
-        <p class="desc">
-          Kurs tańca towarzyskiego od podstaw,
-           który obejmuje naukę zarówno tańców standardowych, 
-           jak i latynoamerykańskich. Na zajęciach poznasz takie tańce
-            jak walc angielski, tango, walc wiedeński, samba, cha-cha, rumba
-             czy jive. Jest to idealny sposób na spędzenie wolnego popołudnia.
-              Na zajęcia nie trzeba zapisywać się w parach. 
-        </p>
-        <p> <button class="dark" (click)="setMessage(STATES.TANIECNOWOCZESNYDOROSLI)"   routerLink="/kontakt">Zapisz się</button></p>
-      </div>
-    </div>
 
     <div class="offer__box" data-aos="fade-up">
       <div class="desc">
-        <p class="photo-title">Kurs tańca użytkowego</p>
+        <p class="photo-title">Ladies latino solo</p>
 
         <p class="desc">
-          Kurs tańca użytkowego przeznaczony jest dla wszystkich osób, 
-          które chcą bawić się tańcem i poczuć się pewnie na parkiecie.
-           Przychodząc na zajęcia przekonasz się, że tańczyć może każdy! 
-           Taniec użytkowy, znany również jako discofox, taniec weselny 
-           czy „2 na 1”, to taniec prosty, a jednocześnie dzięki różnorodności figur, niezwykle widowiskowy. 
-          Podczas zajęć uczymy się podstawowych kroków tanecznych, które możesz wykorzystać na parkiecie w trakcie wesel, balów sylwestrowych i innych imprez.
+          Zajęcia stworzone z myślą o kobietach. 
+          Specjalnie przygotowane choreografie taneczne, 
+          które zawierają podstawowe kroki i elementy tańców latynoamerykańskich,
+           pozwolą każdej z Pań poczuć się wyjątkowo i zmysłowo! 
+           Na zajęciach poznasz takie tańce jak salsa, bachata, zmysłowa rumba, kubańska cha-cha czy energiczny jive. 
         </p>
-        <p> <button class="dark" (click)="setMessage(STATES.UZYTKOWY)"   routerLink="/kontakt" routerLink="/kontakt">Zapisz się</button></p>
+        <p> <button (click)="setMessage(STATES.LATINOSOLO)"   routerLink="/kontakt" class="dark" routerLink="/kontakt">Zapisz się</button></p>
       </div>
 
-      <div class="element couple_use">
+      <div class="element solo_latino">
         <div class="filter">
           <div class="main">
-            <h1 class="title-white">Kurs tańca użytkowego</h1>
-            <button (click)="setMessage(STATES.UZYTKOWY)"   routerLink="/kontakt">Zapisz się</button>
+            <h1 class="title-white">LADIES LATINO SOLO</h1>
+            <button (click)="setMessage(STATES.LATINOSOLO)"   routerLink="/kontakt">Zapisz się</button>
           </div>
         </div>
       </div>
@@ -225,7 +251,7 @@
           Zajęcia skierowane do miłośników latynoskich rytmów. 
           Na zajęciach uczymy się takich tańców jak salsa, bachata, 
           cha-cha, rumba czy jive oraz stopniowo rozszerzamy repertuar taneczny.
-           Zajęcia te to przede wszystkim mnóstwo dobrej energii, muzyki i uśmiechu – a to wszystko do latynoskich utworów muzycznych!
+           Zajęcia te to przede wszystkim mnóstwo dobrej energii, muzyki i uśmiechu – a to wszystko do latynoskich utworów muzycznych!<br><br>
           Nie masz partnera? To nic! Na zajęciach tańczymy zarówno w formie solo, jak i w parach. 
         </p>
         <p> <button class="dark" (click)="setMessage(STATES.LATINODLAPAR)"   routerLink="/kontakt" routerLink="/kontakt">Zapisz się</button></p>
@@ -234,23 +260,149 @@
 
     <div class="offer__box" data-aos="fade-up">
       <div class="desc">
-        <p class="photo-title">Ladies latino solo</p>
+        <p class="photo-title">Taniec Towarzyski</p>
 
         <p class="desc">
-          Zajęcia stworzone z myślą o kobietach. 
-          Specjalnie przygotowane choreografie taneczne, 
-          które zawierają podstawowe kroki i elementy tańców latynoamerykańskich,
-           pozwolą każdej z Pań poczuć się wyjątkowo i zmysłowo! 
-           Na zajęciach poznasz takie tańce jak salsa, bachata, zmysłowa rumba, kubańska cha-cha czy energiczny jive. 
+          Kurs tańca towarzyskiego od podstaw, który obejmuje naukę zarówno tańców standardowych,
+           jak i latynoamerykańskich. Na zajęciach poznasz takie tańce jak walc angielski, tango,
+            walc wiedeński, samba, cha-cha, rumba czy jive. Jest to idealny sposób na spędzenie
+             wolnego popołudnia. Na zajęcia nie trzeba zapisywać się w parach. 
         </p>
         <p> <button (click)="setMessage(STATES.LATINOSOLO)"   routerLink="/kontakt" class="dark" routerLink="/kontakt">Zapisz się</button></p>
       </div>
 
-      <div class="element solo_latino">
+      <div class="element couple_basic">
         <div class="filter">
           <div class="main">
-            <h1 class="title-white">LADIES LATINO SOLO</h1>
-            <button (click)="setMessage(STATES.LATINOSOLO)"   routerLink="/kontakt">Zapisz się</button>
+            <h1 class="title-white">TANIEC TOWARZYSKI</h1>
+            <button (click)="setMessage(STATES.TANIECTOWARZYSKIDOROSLI)"   routerLink="/kontakt">Zapisz się</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="offer__box" data-aos="fade-up">
+      <div class="element couple_basic">
+        <div class="filter">
+          <div class="main">
+            <h1 class="title-white">Kurs tańca towarzyskiego</h1>
+            <button (click)="setMessage(STATES.TANIECTOWARZYSKIDOROSLI)"  routerLink="/kontakt">Zapisz się</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="desc">
+        <p class="photo-title">Taniec nowoczesny / jazz</p>
+
+        <p class="desc">
+          Kurs tańca towarzyskiego od podstaw,
+           który obejmuje naukę zarówno tańców standardowych, 
+           jak i latynoamerykańskich. Na zajęciach poznasz takie tańce
+            jak walc angielski, tango, walc wiedeński, samba, cha-cha, rumba
+             czy jive. Jest to idealny sposób na spędzenie wolnego popołudnia.
+              Na zajęcia nie trzeba zapisywać się w parach. 
+        </p>
+        <p> <button class="dark" (click)="setMessage(STATES.TANIECNOWOCZESNYDOROSLI)"   routerLink="/kontakt">Zapisz się</button></p>
+      </div>
+    </div> -->
+
+    <div class="offer__box" data-aos="fade-up">
+
+
+      <div class="element couple_use">
+        <div class="filter">
+          <div class="main">
+            <h1 class="title-white">Kurs tańca użytkowego</h1>
+            <button (click)="setMessage(STATES.UZYTKOWY)"   routerLink="/kontakt">Zapisz się</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="desc">
+        <p class="photo-title">Kurs tańca użytkowego</p>
+
+        <p class="desc">
+          Kurs tańca użytkowego przeznaczony jest dla wszystkich osób, 
+          które chcą bawić się tańcem i poczuć się pewnie na parkiecie.
+           Przychodząc na zajęcia przekonasz się, że tańczyć może każdy! 
+           Taniec użytkowy, znany również jako discofox, taniec weselny 
+           czy „2 na 1”, to taniec prosty, a jednocześnie dzięki różnorodności figur, niezwykle widowiskowy. 
+          Podczas zajęć uczymy się podstawowych kroków tanecznych, które możesz wykorzystać na parkiecie w trakcie wesel,
+           balów sylwestrowych i innych imprez.
+        </p>
+        <p> <button class="dark" (click)="setMessage(STATES.UZYTKOWY)"   routerLink="/kontakt" routerLink="/kontakt">Zapisz się</button></p>
+      </div>
+    </div>
+
+    <div class="offer__box" data-aos="fade-up">
+      <div class="desc">
+        <p class="photo-title">Zumba</p>
+
+        <p class="desc">
+          Jedna z najbardziej popularnych form ruchu na całym świecie.
+           Zumba to idealne połączenie tańca i fitnessu. W trakcie zajęć spalisz mnóstwo kalorii,
+            a przede wszystkim będziesz się świetnie bawić w rytmie latynoskiej muzyki. 
+            Zajęcia przeznaczone są dla wszystkich osób, w każdym wieku. Przyjdź i zakochaj się w zumbie!
+        </p>
+        <p> <button (click)="setMessage(STATES.ZUMBA)"   routerLink="/kontakt" class="dark" routerLink="/kontakt">Zapisz się</button></p>
+      </div>
+
+      <div class="element zumba">
+        <div class="filter">
+          <div class="main">
+            <h1 class="title-white">ZUMBA</h1>
+            <button (click)="setMessage(STATES.ZUMBA)"   routerLink="/kontakt" routerLink="/kontakt">Zapisz się</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="offer__box" data-aos="fade-up">
+      <div class="element wedding">
+        <div class="filter">
+          <div class="main">
+            <h1 class="title-white">PIERWSZY TANIEC</h1>
+            <button (click)="setMessage(STATES.PIERWSZYTANIEC)"   routerLink="/kontakt">Zapisz się</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="desc">
+        <p class="photo-title">Pierwszy taniec</p>
+
+        <p class="desc">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+        <p> <button  (click)="setMessage(STATES.PIERWSZYTANIEC)"   routerLink="/kontakt" class="dark" routerLink="/kontakt">Zapisz się</button></p>
+      </div>
+    </div>
+
+    <div class="offer__box" data-aos="fade-up">
+      <div class="desc">
+        <p class="photo-title">Lekcej indywidualne</p>
+
+        <p class="desc">
+          Jest to najefektowniejsza forma nauki, podczas której instruktor
+           poświęca tylko Tobie całą swoją uwagę i czas. Na tych zajęciach 
+           dostosujemy poziom i formę nauki do Twoich indywidualnych potrzeb.
+            Terminy lekcji ustalane są indywidualnie. 
+        </p>
+        <p> <button class="dark" (click)="setMessage(STATES.INDYWIDUALNE)"   routerLink="/kontakt" routerLink="/kontakt">Zapisz się</button></p>
+      </div>
+
+      <div class="element individual">
+        <div class="filter">
+          <div class="main">
+            <h1 class="title-white">LEKCJE INDYWIDUALNE</h1>
+            <button (click)="setMessage(STATES.INDYWIDUALNE)"   routerLink="/kontakt">Zapisz się</button>
           </div>
         </div>
       </div>
@@ -284,82 +436,14 @@
       </div>
     </div>
 
-    <div class="offer__box" data-aos="fade-up">
-      <div class="desc">
-        <p class="photo-title">Lekcej indywidualne</p>
+ 
 
-        <p class="desc">
-          Jest to najefektowniejsza forma nauki, podczas której instruktor
-           poświęca tylko Tobie całą swoją uwagę i czas. Na tych zajęciach 
-           dostosujemy poziom i formę nauki do Twoich indywidualnych potrzeb.
-            Terminy lekcji ustalane są indywidualnie. 
-        </p>
-        <p> <button class="dark" (click)="setMessage(STATES.INDYWIDUALNE)"   routerLink="/kontakt" routerLink="/kontakt">Zapisz się</button></p>
-      </div>
 
-      <div class="element individual">
-        <div class="filter">
-          <div class="main">
-            <h1 class="title-white">LEKCJE INDYWIDUALNE</h1>
-            <button (click)="setMessage(STATES.INDYWIDUALNE)"   routerLink="/kontakt">Zapisz się</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="offer__box" data-aos="fade-up">
-      <div class="element wedding">
-        <div class="filter">
-          <div class="main">
-            <h1 class="title-white">PIERWSZY TANIEC</h1>
-            <button (click)="setMessage(STATES.PIERWSZYTANIEC)"   routerLink="/kontakt">Zapisz się</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="desc">
-        <p class="photo-title">Pierwszy taniec</p>
-
-        <p class="desc">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-        <p> <button  (click)="setMessage(STATES.PIERWSZYTANIEC)"   routerLink="/kontakt" class="dark" routerLink="/kontakt">Zapisz się</button></p>
-      </div>
-    </div>
   </div>
 
-  <h1 class="title-subsegment">Zajęcia fitness</h1>
-  <div class="offers">
-    <div class="offer__box" data-aos="fade-up">
-      <div class="desc">
-        <p class="photo-title">Zumba</p>
+  <!-- <h1 class="title-subsegment">Zajęcia fitness</h1> -->
+  <!-- <div class="offers">
 
-        <p class="desc">
-          Jedna z najbardziej popularnych form ruchu na całym świecie.
-           Zumba to idealne połączenie tańca i fitnessu. W trakcie zajęć spalisz mnóstwo kalorii,
-            a przede wszystkim będziesz się świetnie bawić w rytmie latynoskiej muzyki. 
-            Zajęcia przeznaczone są dla wszystkich osób, w każdym wieku. Przyjdź i zakochaj się w zumbie!
-        </p>
-        <p> <button (click)="setMessage(STATES.ZUMBA)"   routerLink="/kontakt" class="dark" routerLink="/kontakt">Zapisz się</button></p>
-      </div>
-
-      <div class="element zumba">
-        <div class="filter">
-          <div class="main">
-            <h1 class="title-white">ZUMBA</h1>
-            <button (click)="setMessage(STATES.ZUMBA)"   routerLink="/kontakt" routerLink="/kontakt">Zapisz się</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="offer__box" data-aos="fade-up">
       <div class="element step">
@@ -388,5 +472,5 @@
         <p> <button (click)="setMessage(STATES.STEP)"    class="dark" routerLink="/kontakt">Zapisz się</button></p>
       </div>
     </div>
-  </div>
+  </div> -->
 </section>

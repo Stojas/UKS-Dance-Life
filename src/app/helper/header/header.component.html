@@ -9,7 +9,7 @@
         <fa-icon data-aos="fade-up" *ngIf="isOpen" (click)="showMenu()" [icon]="faTimes"></fa-icon>
     </div> -->
     <fa-icon class="hamburger"  (click)="showMenu()" [icon]="faBars"></fa-icon>
-    <div class="tab">
+    <div class="tab" (click)="isOpen = false">
         <a  routerLink="/">Strona główna</a>
         <a  routerLink="/o-nas">O nas</a>
         <a routerLink="/oferta">Oferta</a>
