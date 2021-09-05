@@ -80,7 +80,8 @@
                         align-items: center;
                         flex-direction: column;
                         transition: all 0.5s;
-                        background-color: #565656;
+                        // background-color: rgba(119, 50, 172, 0.9);
+                        // background: linear-gradient(25deg, rgba(75, 186, 219, 0.7), rgb(194, 115, 255, 0.7) , rgb(27, 62, 128, 0.7) );
                         z-index: 1000;
                         h2{
                             color: #fff;
@@ -103,10 +104,10 @@
 
                         &:hover{
                             background-color: #fff;
-                            color: #565656;
-                            border: 1px solid #565656;
+                            color: rgb(194, 115, 255, 0.7);
+                            border: 1px solid rgb(194, 115, 255, 0.7);
                             h2, p{
-                                color: #565656;
+                                color: rgb(194, 115, 255, 0.7);
                             }
                         }
                     }

@@ -101,7 +101,8 @@
 }
 
 .always-black{
-  background-color: #000 !important;
+  // background-color: !important;
+  background: linear-gradient(25deg, rgba(75, 186, 219, 0.9), rgb(194, 115, 255, 0.9) , rgb(27, 62, 128, 0.9) ) !important;
 }
 
 @keyframes minimize {
