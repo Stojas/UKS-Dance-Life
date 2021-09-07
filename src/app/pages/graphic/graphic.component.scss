@@ -35,7 +35,7 @@
         border-spacing: 0;
         thead{
             // background: linear-gradient(25deg, rgba(75, 186, 219, 0.7), rgb(194, 115, 255, 0.7) , rgb(27, 62, 128, 0.7) );
-            background-color: #000;
+            background-color: #343434;
 
            tr, th{
                color: white;
@@ -118,42 +118,50 @@
     }
 }
 
-.couple_sport{
+.blue{
     background-color: #008dc9;
 }
 
-.couple_basic{
+.green{
     background-color: #12c468;
 }
 
-.ladies_latino_solo{
+.red{
     background-color: #d91640;
 }
 
-.couple_use{
+.lightgreen{
     background-color: #84d119;
 }
 
-.kids_mix{
+.orange{
     background-color: #de7e54;
 }
 
-.basic{
-    background-color: #dede18;
+.yellow{
+    background-color: #d9d58f;
 }
 
-.couple_adult{
+.lightblue{
     background-color: #21d9d9;
 }
 
-.step{
+.lightorange{
     background-color: #e89220;
 }
 
-.couple_latino{
-    background-color: #d5a6ff;
+.violet{
+    background-color: #b093b8;
 }
 
-.zumba{
+.pink{
     background-color: #ff3d71;
+}
+
+.green_one{
+    background-color: #a8d194;
+} 
+
+.dark_blue{
+    background-color: #428a89;
 }

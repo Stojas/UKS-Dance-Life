@@ -34,7 +34,8 @@ html, body{
         text-transform: uppercase;
         text-align: center;
         padding: 80px 0;
-        background-color: #dedede;
+        // background-color: #dedede;
+        background: linear-gradient(25deg, rgba(75, 186, 219, 0.9), rgb(194, 115, 255, 0.9) , rgb(27, 62, 128, 0.9) ) !important;
         margin: 0;
     }
     h1.title-subsegment{
@@ -45,7 +46,7 @@ html, body{
         text-transform: uppercase;
         text-align: center;
         padding: 40px 0;
-        background-color: #000;
+        background-color: #343434;
         color: #fff;
         margin: 0;
     }

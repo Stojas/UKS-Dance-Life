@@ -25,6 +25,7 @@ export class ContactComponent implements OnInit {
     this.form = new FormGroup({
       name: new FormControl(null, Validators.minLength(3)),
       lastname: new FormControl(null, Validators.minLength(3)),
+      phone: new FormControl(null, Validators.maxLength(9)),
       message: new FormControl(null, Validators.minLength(20)),
     })
 

@@ -4,8 +4,8 @@
     <div class="main">
         <div class="location">
             <h2>LOKACJA</h2>
-            <h3>Poznańska 12, 88-100 Inowrocław</h3> 
-            <h2 style="margin-top: 50px">Nr. tel</h2>
+            <h3>Poznańska 42, 88-100 Inowrocław</h3> 
+            <h2 style="margin-top: 50px">TELEFON</h2>
             <h3>695 776 388</h3>
             <h2 style="margin-top: 50px;">Email   </h2>
             <h3>uksdancelife@gmail.com</h3>
@@ -30,6 +30,10 @@
                 <input  [formControl]="form.controls['lastname']" name="lastname" id="lastname">
             </div>
             <div class="input-row">
+                <h3>Telefon</h3>
+                <input type="number"  [formControl]="form.controls['phone']" name="phone" id="phone">
+            </div>
+            <div class="input-row">
                 <h3>Wiadomość</h3>
                 <textarea  [formControl]="form.controls['message']" rows="10"></textarea>
             </div>
@@ -38,6 +42,6 @@
             </div>
         </form>
     </div>
-    <h1 class="title-segment special-segment">Czekamy na Ciebie!</h1>
+    <h1 class="title-segment special-segment" style="background: none !important; background-color: #212121 !important">Czekamy na Ciebie!</h1>
   
 </div>  
