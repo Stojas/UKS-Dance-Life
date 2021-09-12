@@ -1,53 +1,60 @@
+
 <div class="parallax main-first">
   <div class="filter">
-    <div class="text" data-aos="fade-left" data-aos-delay="500">
-      UKS DANCE LIFE
+    <div class="whole">
+      <div class="text" data-aos="fade-left" data-aos-delay="500">
+        UKS DANCE LIFE
+      </div>
+      <div class="separator" data-aos="fade-down" data-aos-delay="100"></div>
+      <div class="text quot" data-aos="fade-right" data-aos-delay="1000">
+        &quot;...z miłości do tańca&quot;
+      </div>
+      <div
+        class="arrow-down blink"
+        (click)="scroll(info)"
+        data-aos="fade-up"
+        data-aos-delay="3000"
+      >
+        <fa-icon class="arrow" [icon]="faChevronDown"></fa-icon>
+      </div>
     </div>
-    <div class="separator" data-aos="fade-down" data-aos-delay="100"></div>
-    <div class="text quot" data-aos="fade-right" data-aos-delay="1000">
-      &quot;...z miłości do tańca&quot;
+    <div>
+      <section class="main intro" #info>
+        <h1 data-aos="fade-up" class="title-black"></h1>
+        <p data-aos="fade-up" class="desc">
+          Zapraszamy Cię w miejsce, w którym rozpoczniesz swoją podróż w niesamowity świat tańca!
+        </p>
+      </section>
     </div>
-    <div
-      class="arrow-down blink"
-      (click)="scroll(info)"
-      data-aos="fade-up"
-      data-aos-delay="3000"
-    >
-      <fa-icon class="arrow" [icon]="faChevronDown"></fa-icon>
-    </div>
+    <section class="info">
+      <div class="filter_info">
+        <h1 data-aos="fade-up" class="title-white">Nasza oferta</h1>
+        <div data-aos="fade-up" class="row">
+          <div class="element">
+            <fa-icon [icon]="faUserFriends"> </fa-icon>
+            <p class="desc">O nas</p>
+            <button routerLink="/o-nas">Sprawdź</button>
+          </div>
+          <div class="element">
+            <fa-icon [icon]="faShoePrints"></fa-icon>
+            <p class="desc">Nasza oferta</p>
+            <button routerLink="/oferta">Sprawdź</button>
+          </div>
+          <div class="element">
+            <fa-icon [icon]="faCalendarAlt"></fa-icon>
+            <p class="desc">Nasz grafik</p>
+            <button routerLink="/grafik">Sprawdź</button>
+          </div>
+          <div class="element">
+            <fa-icon [icon]="faEvelope"> </fa-icon>
+            <p class="desc">Kontakt</p>
+            <button routerLink="/kontakt">Sprawdź</button>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+
   </div>
 </div>
-<section class="main intro" #info>
-  <h1 data-aos="fade-up" class="title-black"></h1>
-  <p data-aos="fade-up" class="desc">
-    Zapraszamy Cię w miejsce, w którym rozpoczniesz swoją podróż w niesamowity świat tańca!
-  </p>
-</section>
-<section class="info parallax">
-  <div class="filter">
-    <h1 data-aos="fade-up" class="title-white">Nasza oferta</h1>
-    <div data-aos="fade-up" class="row">
-      <div class="element">
-        <fa-icon [icon]="faUserFriends"> </fa-icon>
-        <p class="desc">O nas</p>
-        <button routerLink="/o-nas">Sprawdź</button>
-      </div>
-      <div class="element">
-        <fa-icon [icon]="faShoePrints"></fa-icon>
-        <p class="desc">Nasza oferta</p>
-        <button routerLink="/oferta">Sprawdź</button>
-      </div>
-      <div class="element">
-        <fa-icon [icon]="faCalendarAlt"></fa-icon>
-        <p class="desc">Nasz grafik</p>
-        <button routerLink="/grafik">Sprawdź</button>
-      </div>
-      <div class="element">
-        <fa-icon [icon]="faEvelope"> </fa-icon>
-        <p class="desc">Kontakt</p>
-        <button routerLink="/kontakt">Sprawdź</button>
-      </div>
 
-    </div>
-  </div>
-</section>
