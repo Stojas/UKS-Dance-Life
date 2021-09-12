@@ -19,23 +19,33 @@
             <a [href]="link"><h3>Kliknij tutaj i napisz do nas, jakie zajęcia Cię interesują, a na pewno się odezwiemy!</h3></a>
             <a [href]="link" style="font-size: 50px"><fa-icon [icon]="faEvelope"> </fa-icon></a>
         </div> -->
-        <form class="mail" data-netlify="true" [formGroup]="form" (submit)="sendMessage()">
+        <form class="mail" [formGroup]="form" (submit)="sendMessage()">
             <h2>NAPISZ DO NAS!</h2>
             <div class="input-row">
                 <h3>Imię</h3>
-                <input [formControl]="form.controls['name']" name="name" id="name">
+                <input [formControl]="form.controls['name']" placeholder="Imię" name="name" id="name">
             </div>
             <div class="input-row">
                 <h3>Nazwisko</h3>
-                <input  [formControl]="form.controls['lastname']" name="lastname" id="lastname">
+                <input  [formControl]="form.controls['lastname']" placeholder="Nazwisko" name="lastname" id="lastname">
             </div>
+            <!-- <div class="input-row">
+                <h3>Adres email</h3>
+                <input type="email" placeholder="Adres email"  [formControl]="form.controls['email']"  name="email" id="email">
+            </div> -->
             <div class="input-row">
                 <h3>Telefon</h3>
-                <input type="number"  [formControl]="form.controls['phone']" name="phone" id="phone">
+                <input type="text" placeholder="Numer tel"  [formControl]="form.controls['phone']" mask="000 000 000" name="phone" id="phone">
             </div>
             <div class="input-row">
                 <h3>Wiadomość</h3>
                 <textarea  [formControl]="form.controls['message']" rows="10"></textarea>
+            </div>
+            <div class="row" style="position: relative">
+                <!-- <h3>Telefon</h3> -->
+                <input style="max-width: 50px;" type="checkbox"  [formControl]="form.controls['agreement']" name="agreement" id="agreement">
+                <label for="agreement" >Wyrażam zgodę na przetwarzanie moich danych osobowych przez Klub Sportowy UKS Dance Life w związku z prośbą o odpowiedź na wysłany formularz kontaktowy. Poinformowano mnie, że niniejsza zgoda jest dobrowolna. <br></label>
+                
             </div>
             <div class="row">
                 <button class="dark" type="submit">Wyślij wiadomość!</button>
@@ -44,4 +54,6 @@
     </div>
     <h1 class="title-segment special-segment" style="background: none !important; background-color: #212121 !important">Czekamy na Ciebie!</h1>
   
+    <div class="error-toast" *ngIf="error" data-aos="fade-left">{{errText}}</div>
+    <div class="success-toast" *ngIf="success" data-aos="fade-left">Dziękujemy za przesłanie wiadomości. Skontaktujemy się z państwem tak szybko, jak to będzie możliwe!</div>
 </div>  

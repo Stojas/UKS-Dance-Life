@@ -1,13 +1,5 @@
-<div class="header" [ngClass]="{'show': isOpen, 'scrolled-header':  (isScrolled | async ), 'maximize-header':  ((isScrolled | async ) == false), 'always-black': !(stateService.isMain | async)}">
-    <img class="logo" src="assets/img/uks_logo_header.png">
-    <!-- <div class="header-container">
-        <img src="assets/img/uks_logo_header.png">
-        
-    </div> -->
-    <!-- <div class="tab">
-        <fa-icon data-aos="fade-up" *ngIf="!isOpen" (click)="showMenu()" [icon]="faBars"></fa-icon>
-        <fa-icon data-aos="fade-up" *ngIf="isOpen" (click)="showMenu()" [icon]="faTimes"></fa-icon>
-    </div> -->
+<section class="header" [ngClass]="{'show': isOpen, 'scrolled-header':  (isScrolled | async ), 'maximize-header':  ((isScrolled | async ) == false), 'always-black': !(stateService.isMain | async)}">
+    <img class="logo" alt="UKS Dance Life Logo" src="assets/img/uks_logo_header.png">
     <fa-icon class="hamburger"  (click)="showMenu()" [icon]="faBars"></fa-icon>
     <div class="tab" (click)="isOpen = false">
         <a  routerLink="/">Strona główna</a>
@@ -17,4 +9,4 @@
         <a routerLink="/cennik">Cennik</a>
         <a routerLink="/kontakt">Kontakt</a>
     </div>
-</div>
+</section>
