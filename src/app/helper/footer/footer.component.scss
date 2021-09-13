@@ -53,7 +53,13 @@
 
     .additional{
     
-
+      @media screen and (max-width: 475px){
+        max-width: 145px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        overflow-x: hidden;
+      }
     }
   }
   
