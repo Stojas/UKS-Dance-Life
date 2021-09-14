@@ -21,8 +21,8 @@
         align-items: center;
         flex-direction: column;
         @media screen and (max-width: 700px){
-            background-position: -100px 10% !important; 
-            background-size: cover;
+            background-position: 100% !important; 
+            background-size: 100% 100%;
         }
         .logo-text{
             p{
