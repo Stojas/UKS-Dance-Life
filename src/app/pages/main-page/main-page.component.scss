@@ -13,14 +13,14 @@
         background-position: 0 10% !important;
   
         background-repeat: no-repeat; 
-        background-size: auto; 
+        background-size: cover; 
         background-color: #000;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        @media screen and (max-width: 510px){
+        @media screen and (max-width: 700px){
             background-position: -100px 10% !important; 
             background-size: cover;
         }
