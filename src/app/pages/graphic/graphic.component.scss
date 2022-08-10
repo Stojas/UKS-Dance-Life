@@ -104,10 +104,13 @@
 
                         &:hover{
                             background-color: #fff;
-                            color: rgb(194, 115, 255, 0.7);
-                            border: 1px solid rgb(194, 115, 255, 0.7);
+                            // color: rgb(194, 115, 255, 0.7);
+                            // border: 1px solid rgb(194, 115, 255, 0.7);
+                            color: #000;
+                            border: 1px solid #000;
                             h2, p{
-                                color: rgb(194, 115, 255, 0.7);
+                                // color: rgb(194, 115, 255, 0.7);
+                                color: #000;
                             }
                         }
                     }
@@ -164,4 +167,15 @@
 
 .dark_blue{
     background-color: #428a89;
+}
+
+.grey {
+    background-color: #343434;
+    &:hover {
+        background-color: #343434!important;
+        color: #fff!important;
+        h2, p{
+            color: #fff!important;
+        }
+    }
 }

@@ -38,6 +38,8 @@
                 text-align: left;
             }   
             // flex-basis: 500px;  
+            font-size: 16px;
+            line-height: 23px;
             max-width: 500px;
         }
 
@@ -253,6 +255,22 @@
 
 .pro_am{
     background-image: url('../../../assets/img/PRO-AM.jpg');
+}
+
+.bachata{
+    background-image: url('../../../assets/img/bachata.jpg');
+}
+
+.salsa{
+    background-image: url('../../../assets/img/salsa.jpg');
+}
+
+.highheels{
+    background-image: url('../../../assets/img/high heels.jpg');
+}
+
+.rueda{
+    background-image: url('../../../assets/img/rueda.jpg');
 }
 
 .wedding{

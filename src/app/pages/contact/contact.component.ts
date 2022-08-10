@@ -30,6 +30,7 @@ export class ContactComponent implements OnInit {
       name: new FormControl(null, [Validators.required]),
       lastname: new FormControl(null, [Validators.required]),
       phone: new FormControl(null, [Validators.required]),
+      email: new FormControl(null, [Validators.required, Validators.email]),
       agreement: new FormControl(null, [Validators.required, Validators.requiredTrue]),
       message: new FormControl(null, [Validators.minLength(20), Validators.required]),
     })
@@ -71,7 +72,7 @@ export class ContactComponent implements OnInit {
           }
         );
     }else{
-      this.errText = 'Wszystkie pola formularza są wymagane. Wypełnij pola i spróbuj ponownie!'
+      this.errText = 'Wszystkie pola formularza są wymagane. Pamiętaj o poprawności wprowadzanych danych. Wypełnij pola i spróbuj ponownie!'
       this.error = true;
       setTimeout(() => {
         this.error = false;

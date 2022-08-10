@@ -40,4 +40,9 @@ export enum STATES {
   LATINOSOLO = "Proszę o zapisanie na zajęcia Ladies Latino Solo!",
   LATINODLAPAR = "Proszę o zapisanie na zajęcia Latino Mix!",
   UZYTKOWY = "Proszę o zapisanie na kurs Tańca Użytkowego",
+  HIGHHEELS = "Proszę o zapisanie na zajęcia High Heels",
+  BACHATA = "Proszę o zapisanie na zajęcia Bachaty",
+  SALSA = "Proszę o zapisanie na zajęcia Salsy",
+  RUEDA = "Proszę o zapisanie na zajęcia Rueda de Casino"
+
 };
