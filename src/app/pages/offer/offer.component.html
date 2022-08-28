@@ -26,7 +26,7 @@
       </div>
     </div>
 
-    <div class="offer__box" data-aos="fade-up">
+    <!-- <div class="offer__box" data-aos="fade-up">
       <div class="desc">
         <p class="photo-title">Taneczny Mix</p>
         <p class="desc">
@@ -47,17 +47,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="offer__box" data-aos="fade-up">
-      <div class="element kids_couple_sport">
-        <div class="filter">
-          <div class="main">
-            <h1 class="title-white">Taniec towarzyski</h1>
-            <button routerLink="/kontakt" (click)="setMessage(STATES.TANIECTOWARZYSKIDZIECI)" >Zapisz się</button>
-          </div>
-        </div>
-      </div>
 
       <div class="desc">
         <p class="photo-title">Taniec towarzyski</p>
@@ -75,6 +67,15 @@
 
         </p>
         <p> <button class="dark" (click)="setMessage(STATES.TANIECTOWARZYSKIDZIECI)"  routerLink="/kontakt">Zapisz się</button></p>
+      </div>
+
+      <div class="element kids_couple_sport">
+        <div class="filter">
+          <div class="main">
+            <h1 class="title-white">Taniec towarzyski</h1>
+            <button routerLink="/kontakt" (click)="setMessage(STATES.TANIECTOWARZYSKIDZIECI)" >Zapisz się</button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -106,6 +107,17 @@
   <div class="offers">
 
     <div class="offer__box" data-aos="fade-up">
+
+
+      <div class="element zumba">
+        <div class="filter">
+          <div class="main">
+            <h1 class="title-white">Zumba</h1>
+            <button (click)="setMessage(STATES.ZUMBA)"   routerLink="/kontakt" routerLink="/kontakt">Zapisz się</button>
+          </div>
+        </div>
+      </div>
+
       <div class="desc">
         <p class="photo-title">Zumba</p>
 
@@ -117,16 +129,32 @@
         </p>
         <p> <button (click)="setMessage(STATES.ZUMBA)"   routerLink="/kontakt" class="dark" routerLink="/kontakt">Zapisz się</button></p>
       </div>
+    </div>
 
-      <div class="element zumba">
+    <div class="offer__box" data-aos="fade-up">
+ 
+      <div class="desc">
+        <p class="photo-title">CARDIO FITNESS</p>
+
+        <p class="desc">
+          Zajęcia siłowe, w skład których wchodzą ćwiczenia typowo spalające. 
+          Do muzyki wykonywane są krótkie sekwencje ruchów oraz ćwiczenia 
+          poświęcone konkretnej partii ciała: pośladki, nogi, brzuch, ręce. 
+          Całe zajęcia poprzedzone są rozgrzewką, a na koniec spokojne rozciąganie. 
+        </p>
+        <p> <button (click)="setMessage(STATES.CARDIOFITNESS)"   routerLink="/kontakt" class="dark" routerLink="/kontakt">Zapisz się</button></p>
+      </div>
+
+      <div class="element cardio">
         <div class="filter">
           <div class="main">
-            <h1 class="title-white">Zumba</h1>
-            <button (click)="setMessage(STATES.ZUMBA)"   routerLink="/kontakt" routerLink="/kontakt">Zapisz się</button>
+            <h1 class="title-white">CARDIO FITNESS</h1>
+            <button (click)="setMessage(STATES.CARDIOFITNESS)"   routerLink="/kontakt" routerLink="/kontakt">Zapisz się</button>
           </div>
         </div>
       </div>
     </div>
+
 
 
     <div class="offer__box" data-aos="fade-up">
@@ -161,8 +189,7 @@
 
         <p class="desc">
           Na zajęciach odkryjesz swoją kobiecość, nauczysz się poprawnie ruszać oraz tańczyć na wysokich obcasach do zmysłowych i sensualnych utworów. 
-          <br><br>
-           <strong>Zajęcia odbywają się raz w tygodniu (60 minut)</strong>
+
         </p>
         <p> <button class="dark" (click)="setMessage(STATES.HIGHHEELS)"   routerLink="/kontakt" routerLink="/kontakt">Zapisz się</button></p>
       </div>

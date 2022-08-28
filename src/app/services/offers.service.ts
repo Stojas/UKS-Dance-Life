@@ -43,6 +43,6 @@ export enum STATES {
   HIGHHEELS = "Proszę o zapisanie na zajęcia High Heels",
   BACHATA = "Proszę o zapisanie na zajęcia Bachaty",
   SALSA = "Proszę o zapisanie na zajęcia Salsy",
-  RUEDA = "Proszę o zapisanie na zajęcia Rueda de Casino"
-
+  RUEDA = "Proszę o zapisanie na zajęcia Rueda de Casino",
+  CARDIOFITNESS = "Proszę o zapisanie na zajęcia Cardio Fitness"
 };
