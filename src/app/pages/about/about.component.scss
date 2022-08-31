@@ -83,15 +83,9 @@
             opacity: 0.3;
         }
         &:hover{
-            // background-position: top center;
             .filter{
                 opacity: 1;
-                // background: linear-gradient(25deg, rgba(75, 186, 219, 0.4), rgb(194, 115, 255, 0.4) , rgb(27, 62, 128, 0.4) );
             }
-            // .main{
-            //     flex-basis: 50%;
-            //     opacity: 1;
-            // }
         }
         @media screen and (max-width: 1000px){
             flex-basis: 50%;

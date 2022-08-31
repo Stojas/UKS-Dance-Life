@@ -92,6 +92,11 @@
             flex-direction: column;
             background-color: transparent;
             opacity: 0.4;
+
+               @media screen and (max-width: 875px) {
+                    display: none;
+                    
+                }
             .main{
                 opacity: 0;
                 transition: opacity 0.5s ease-in-out;            }
