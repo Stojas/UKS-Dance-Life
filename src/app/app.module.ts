@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
 import { FooterComponent } from './helper/footer/footer.component';
@@ -15,8 +16,20 @@ import { PriceListComponent } from './pages/price-list/price-list.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxMaskModule } from 'ngx-mask';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
+  entryComponents: [
+    AppComponent,
+    HeaderComponent,
+    MainPageComponent,
+    FooterComponent,
+    AboutComponent,
+    OfferComponent,
+    GraphicComponent,
+    PriceListComponent,
+    ContactComponent,
+  ],
   declarations: [
     AppComponent,
     HeaderComponent,
@@ -36,6 +49,8 @@ import { NgxMaskModule } from 'ngx-mask';
     FormsModule,
     HttpClientModule,
     NgxMaskModule.forRoot(),
+    RouterModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

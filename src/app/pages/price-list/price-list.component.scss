@@ -2,7 +2,13 @@
     width:100%;
     padding: 50px 50px 50px 50px;
     text-align: center;
-    
+
+    p {
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
     .overflow{
         overflow-x: auto;
         
