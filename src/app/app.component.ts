@@ -9,7 +9,7 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'UKS-Dance-Life';
+  title = 'Dance-Life';
   constructor(){
  
   

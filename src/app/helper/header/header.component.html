@@ -1,5 +1,5 @@
 <section class="header" [ngClass]="{'show': isOpen, 'scrolled-header':  (isScrolled | async ), 'maximize-header':  ((isScrolled | async ) == false), 'always-black': !(stateService.isMain | async)}">
-    <img class="logo" alt="UKS Dance Life Logo" src="assets/images/logo.png">
+    <img class="logo" alt="Dance Life Logo" src="assets/images/logo.png">
     <fa-icon class="hamburger"  (click)="showMenu()" [icon]="faBars"></fa-icon>
     <div class="tab" (click)="isOpen = false">
         <a  routerLink="/">Strona główna</a>

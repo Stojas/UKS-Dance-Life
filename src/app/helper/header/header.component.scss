@@ -7,7 +7,7 @@
     height: 90px;
     width: 100vw;
     display: flex;
-    background: linear-gradient(25deg, #040404,  #2e2d2d );
+    background:linear-gradient(25deg, #040404, #040404);
     .hamburger{
       display: none;
       color: white;
@@ -85,6 +85,8 @@
       left: 20px;
       // filter: brightness(0) invert(1);
       height: 100%;
+      max-width: 100px;
+      max-height: 100px;
     }
 
 }
@@ -104,15 +106,15 @@
 
 .always-black{
   // background-color: !important;
-  background: linear-gradient(25deg, #040404,  #2e2d2d ) !important;
+  background:linear-gradient(25deg, #040404, #040404) !important;
 }
 
 @keyframes minimize {
-  0%   {height:90px; background: linear-gradient(25deg, #040404,  #2e2d2d );  }
+  0%   {height:90px; background:linear-gradient(25deg, #040404, #040404);  }
   100% {height:70px;  }
 }
 @keyframes maximize {
-  0%   {height:70px; background: linear-gradient(25deg, #040404,  #2e2d2d ); 
+  0%   {height:70px; background:linear-gradient(25deg, #040404, #040404); 
  }
   100% {height:90px;  
   }
@@ -140,7 +142,7 @@
     .hamburger{
       display: block;
     }
-    background: linear-gradient(25deg, #040404,  #2e2d2d ) !important;
+    background:linear-gradient(25deg, #040404, #040404) !important;
   }
   .show{
     min-height: 440px;
