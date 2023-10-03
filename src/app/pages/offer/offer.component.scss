@@ -1,6 +1,6 @@
 
 .filter{
-    background: linear-gradient(25deg, rgba(75, 186, 219, 0.7), rgb(194, 115, 255, 0.7) , rgb(27, 62, 128, 0.7) );
+    background: linear-gradient(25deg, rgba(4, 4, 4, 0.6),  rgba(46, 45, 45, 0.6) ) !important;
     width: 100%;
     height: 100%;
     position: relative;
@@ -132,7 +132,7 @@
             flex-basis: 10%;
             max-width: 1px;
             height: 500px;
-            background: linear-gradient(25deg, rgba(75, 186, 219, 0.7), rgb(194, 115, 255, 0.7) , rgb(27, 62, 128, 0.7) );
+            background: linear-gradient(25deg, rgba(4, 4, 4, 0.6),  rgba(46, 45, 45, 0.6) ) !important;
         }
         .offer{
             flex-basis: 45%;
@@ -314,7 +314,7 @@
     .element{
         .filter{
             opacity: 1!important;
-            background: linear-gradient(25deg, rgba(75, 186, 219, 0.4), rgb(194, 115, 255, 0.4) , rgb(27, 62, 128, 0.4) );
+            background: linear-gradient(25deg, rgba(4, 4, 4, 0.6),  rgba(46, 45, 45, 0.6) ) !important;
             .main{
                 display: none;
             }
