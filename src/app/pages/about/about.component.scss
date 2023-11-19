@@ -13,12 +13,16 @@
     }
 
     .offer__box{
-        width: 80%; 
+        width: 100%; 
         margin: auto;
         height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media scree and (min-width: 767px) {
+            width: 80%; 
+        }
 
         .desc{      
             .photo-title{
@@ -36,6 +40,11 @@
             .element{
                 order: 1;
                 min-height: 500px !important;
+                background-position: 0;
+
+                @media screen and (min-width: 767px ) {
+                    background-position: unset;
+                }
             }
             .desc{
                 order: 2;
@@ -59,6 +68,11 @@
         flex-direction: column;
         width: 500px !important;
         transition: all 0.5s ease-in-out;
+        background-position: 0;
+
+        @media screen and (min-width: 767px ) {
+            background-position: unset;
+        }
         .main{
             flex-basis: 100%;
             display: flex;
@@ -97,35 +111,70 @@
 
     .michalina{
         background-image: url('../../../assets/images/MICHALINA KUKLIŃSKA.jpg');
+
+        background-position: 0 !important;
+        @media screen and (min-width: 767px ) {
+            background-position: 0 -100px!important;
+        }
     }
 
     .filip{
         background-image: url('../../../assets/images/FILIP KUKLIŃSKI.JPG');
+
+        background-position: 0 -75px!important;
+        // @media screen and (min-width: 767px ) {
+        //     background-position: unset!important;
+        // }
     }
 
     .kamil {
         background-image: url('../../../assets/images/KAMIL ZATYKA.JPG');
+        background-position: 0 -110px!important;
+           @media screen and (min-width: 767px ) {
+            background-position: 0 -95px!important;
+        }
     }
 
     
     .lidia {
         background-image: url('../../../assets/images/LIDIA STECZEK.jpg');
+        
+        background-position: 0 -100px!important;
+        // @media screen and (min-width: 767px ) {
+        //     background-position: unset!important;
+        // }
     }
 
     .marta {
         background-image: url('../../../assets/images/MARTA RZEŹNIK.JPG');
+        background-position: 0 -70px!important;
+        // @media screen and (min-width: 767px ) {
+        //     background-position: unset!important;
+        // }
     }
 
     .paulina {
         background-image: url('../../../assets/images/PAULINA PIETRZYCKA.JPG');
+        background-position: 0 -70px!important;
+        // @media screen and (min-width: 767px ) {
+        //     background-position: unset!important;
+        // }
     }
 
     .asia {
         background-image: url('../../../assets/images/ASIA ŁAPIŃSKA.jpg');
+        background-position: 0 -95px!important;
+        // @media screen and (min-width: 767px ) {
+        //     background-position: unset!important;
+        // }
     }
 
     .zuzia {
         background-image: url('../../../assets/images/ZUZIA MAZUR.jpg');
+        background-position: 0 -130px!important;
+        // @media screen and (min-width: 767px ) {
+        //     background-position: unset!important;
+        // }
     }
 
     .natalia{
