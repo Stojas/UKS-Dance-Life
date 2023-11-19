@@ -27,7 +27,7 @@
     "@fortawesome/angular-fontawesome": "^0.8.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "@nguniversal/express-engine": "^10.1.0",
+    "@nguniversal/express-engine": "^11.2.1",
     "aos": "^2.3.3",
     "core-js": "^2.5.4",
     "express": "^4.15.2",
